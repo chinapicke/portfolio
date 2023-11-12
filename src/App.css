@@ -1,0 +1,13 @@
+
+*{
+  font-weight: 700;
+  /* font-family: 'Cormorant Upright', serif; */
+  /* font-family: 'DM Serif Display', serif; */
+  font-family: 'Italiana', serif;
+  /* font-family: 'Playfair Display', serif; */
+  
+  }
+
+.App{
+  height:100vh;
+}

@@ -1,0 +1,178 @@
+.aboutContainer{
+    background-color:black;
+    color: white;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+.skillsDiv{
+    display: flex;
+    justify-content: center;
+}
+.skillsList{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+.skillIcon{
+    width: 50px;
+    height:50px; 
+    margin:10px
+}
+.middleSectionAboutPg{
+    display: flex;
+    flex-direction: column;
+}
+
+#static-CVBtn{
+    /* background-color: white; */
+    border-radius: 10%;
+    background: hsl(340deg 100% 32%);
+    border: none;
+    /* border-radius: 12px; */
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+}
+
+.frontButton{
+        display: block;
+        padding: 12px 42px;
+        border-radius: 12px;
+        font-size: 1.25rem;
+        background: hsl(345deg 100% 47%);
+        color: white;
+        transform: translateY(-6px);
+}
+
+#clicked-CVBtn{
+    background-color: red;
+    border-radius: 10px;
+
+}
+
+.spinningIcon{
+    margin-left: 10px;
+}
+
+.CVBtn{
+    /* background-color: white; */
+    color:black;
+    padding:1.5vw;
+    font-size: 20px;
+}
+
+.aboutHeadingPhoto{
+    display: flex;
+    flex-direction: row;
+}
+
+.profilePhotoDiv{
+    position:relative;
+    top: -120px;
+    left: 145px;
+}
+
+.profilePicture{
+    width:120px; 
+    border-radius: 50%;
+    position:absolute; 
+}
+.aboutMainHeading{
+    font-size: 10vh;
+}
+
+.aboutH2{
+    margin: 0px;
+    font-size: 20px;
+}
+
+.aboutH3{
+    margin:0px;
+}
+
+.aboutImgDiv{
+    height:5vh;
+}
+
+.personalInfo{
+    padding-bottom: 10px;
+}
+
+.waterfallAbout{
+    width:250px;
+}
+
+#waterfallImgDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.buttonCvDiv{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width:350px) {
+    .profilePhotoDiv{
+        left: 200px;
+    }
+}
+
+@media screen and (min-width:375px) {
+    .skillsList{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+}
+@media screen and (min-width:700px) {
+    .skillsList{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+    .profilePicture {
+        width: 200px;
+        border-radius: 50%;
+        position: absolute;
+    }
+    .profilePhotoDiv {
+        position: relative;
+    top: -120px;
+    left: 53vw;
+    }
+
+    .personalInfo {
+        padding-bottom: 10px;
+        width: 60vw;
+    }
+
+    .aboutContainer{
+        background-color:black;
+        color: white;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+
+
+    
+}
+
+@media screen and (min-width:1024px) {
+    .largeScreenColumns{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .aboutContainer{
+        background-color:black;
+        color: white;
+        margin-left: 125px;
+        margin-right: 125px;
+    }
+
+    .skillsDiv{
+        margin-top: 50px;
+    }
+
+   
+}
