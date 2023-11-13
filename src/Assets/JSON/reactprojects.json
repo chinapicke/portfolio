@@ -1,26 +1,34 @@
+
+
 [
     {
         "id" : 1,
         "projectname": "gutenBooks",
         "description": "Responsive web app to read free classical books on the go without the use of an extra app or software.",
-        "image":"/images/gutenBooksScreens.png",
+        "quickDescription":"Read free classical books on the go",
+        "image":"/Images/3.jpg",
+        "imageFullScreen":"/Images/gutenvertical.png",
         "deployedURL": "https://gutenbooksweb.netlify.app/",
         "githubUrl": "https://github.com/berta-rf/gutenBooks"    
     }, 
     {
         "id" : 2,
-        "projectname": "ZoomAway",
-        "description": "Responsive car rental app at affordable rates.",
-        "image":"/images/zoomAwayScreens.png",
-        "deployedURL": "https://zoomaway.netlify.app/",
-        "githubUrl": "https://github.com/chinapicke/zoomaway"    
+        "projectname": "ShopIt",
+        "description": "Makeup e-commerce page made using UI from Behance.",
+        "quickDescription":"Makeup e-commerce",
+        "image": "/Images/1.jpg",
+        "imageFullScreen":"/Images/shopitvertical.png",
+        "deployedURL": "https://shopitmakeup.netlify.app/",
+        "githubUrl": "https://github.com/chinapicke/shopit"      
     },
     {
         "id" : 3,
-        "projectname": "ShopIt",
-        "description": "Makeup e-commerce page made using UI from Behance.",
-        "image": "/images/shopitScreens.png",
-        "deployedURL": "https://shopitmakeup.netlify.app/",
-        "githubUrl": "https://github.com/chinapicke/shopit"      
+        "projectname": "ZoomAway",
+        "description": "Responsive car rental app at affordable rates.",
+        "quickDescription":"Car rental",
+        "image":"/Images/4.jpg",
+        "imageFullScreen":"/Images/zavertical.png",
+        "deployedURL": "https://zoomaway.netlify.app/",
+        "githubUrl": "https://github.com/chinapicke/zoomaway"    
     }
 ]

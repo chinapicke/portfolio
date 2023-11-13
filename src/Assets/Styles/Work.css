@@ -1,19 +1,73 @@
+
+.back h2{
+  font-size: 16px;
+}
+
+.cardText{
+  padding: 1rem 7% !important;
+  height:200px;
+  /* word-wrap: break-word; */
+}
+
+.fullScreenProjectCard{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.fullScreenProjectCard{
+  padding: 0px 10%;
+  margin-bottom: 10rem;
+}
+
+.appImageFullscreen{
+  object-fit: cover;
+  border-radius: 6px;
+/* margin:20px;
+width:400px;
+/* height: 300px; */
+}
+
+.projectText{
+  padding-left: 50px;
+}
+
+.projectText h2{
+  text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.circleShadow{
+  /* background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBhsKJTl1rHmdAAADgElEQVRo3sWZXUiTURjH/8/ZlpO0RCy6CCIsrdQ+XF0EZRjMLto7qWgWBsEi6QMqkkiKyKALoU+EJC9mIlSoUOTWlwbmR1GgqySxSQVdFBRSTkNbbjtdqHNTtzZ93/f8Lt8d3v9/5znnvM/zHEKM1Gni1lEmpfF0SkYi5gEYwAB+opdceD/01uKL7X0U/dCHi/wWGJGDeREGudGKRn99/ndZDZSy7B1kRR60Ub7Vi6ewdT4o9ctgoEP3rZBKkI7Y6UFZwp1c76wMPMzxVyADM6eXjpqezdDA/SRtOfbFskqmhaNGf9zojtmAw8BrkQp5+ML3mF9N/xMLI1/EX8omDyyh5w5rDAYcp3kl5kBO4ritoSzKEDRcoxNQhqtS8eRHmskP7OepBEqxca/3blvEGXAU8UooCecHzbawBho2ULvMsZ/KCM8J3hEUsu+dWArl+aQ3TJwLQbtAW66KPJDquT7NDDg285ZZn3rRn45bpechM9Chw03V5AFCebM2xMC3Qr4KapL1uyDIQCljp6A2Z0tZwED2DpX/PwCsNJgDBsgKEVjHdsG9hbqvUSdbcuL1L87/zgDdHiHygJZ2jYbACEGQEaA6TXwfkgQ56B9OYXHrhMkDSfFrGGVCIDyDUbpIAyydYbnQGUhjSBFpACkMiUJnIJEhQaQBSmQQDMNvoSEYZBgUGoJBhj6hEehj6BVqwMXIJTQELob3Ig34utnQW/QL0+/3dDGLD23CDDRbfAygJmEroAlgwN9ajAjRH+H1AAN2/kCjEAOPpb7x0swm5BiuChQmnQ/Qrbp+j9M+URv66ZLqBi6OdpLHPsdzb6t8IL0brg0pz3O9OAyuXvjZsfF7hUBCIrWjRjUDt7a3TiQkAfTH8VkV+Y/6k8EZUQCjmyzwKC7vQUFw7zwkJzR10hGFVwLnhyRnaE4YgqmKn1PUwBlz9aTvwdQx9is4qdDH57Lp1NSseApSMZUoEAiOC6ZpWmFheoMNB+gG4mSU/8MPT578iAYAezZqsUwm+S+sYPvrcIVJGCSnfj1VyxAKjirN6nDy/722s29CBbJmId/lP5L/InJpFhGpvXMtzHgzI/Fu7E8wRJaP+urWkA8rtkEXbbKFJ9zmtMtydTvBowXe3SyPb4nY1PqFFmrk9VLUBV/MLfo6TfwanoEVlIZkzB+7vnfjJ7nwwdft6Yr1+v4fdKr7t0V+3lYAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDYtMjdUMTA6Mzc6NTcrMDA6MDDqiwT3AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTA2LTI3VDEwOjM3OjU3KzAwOjAwm9a8SwAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat; */
+  background-color: rgba(0, 0, 0, 0.21);
+  border-radius:50% ;
+  background-size: 22px;
+  padding-left:10px;
+  padding-right:6px;
+  z-index: 1;
+  position:relative;
+  right:95px;
+  /* padding-bottom: 2px;
+  padding-left: 15px; */
+}
+
+.largeLogo{
+  position: fixed;
+}
+
 .appImage{
-  width:200px;
+  border-radius: 6px;
 }
 
-.workHeader{
-    color: brown;
-}
-
-.reactCards{
-  background-color: beige;
-    color:grey;
-    margin: 5px 5px 5px 5px;
-}
+/* .cardText {
+  padding: 1rem 7% !important;
+  word-wrap: break-word;
+  height: 200px;
+} */
 
 
-.card {
+/* .card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +83,7 @@
     cursor: pointer;
     transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
     transition: all 3s;
-  }
+  } */
   
   /* .card:hover {
     --translate-y: -2px;
@@ -54,3 +108,9 @@
   .card .back {
     transform: rotateY(180deg);
   } */
+
+  @media screen and (min-width:768px){
+    .cardText {
+      height: auto;
+  }
+  }

@@ -1,12 +1,13 @@
 .homepageContainer {
-    background-color: black;
+    /* background-color: black; */
     height:100%;
     width: 100%;
 }
 
 
 .topHomepage{
-    height:900px
+    height:950px;
+    background-color: black;
 }
 
 .contactAddress {
@@ -174,7 +175,7 @@ svg {
         margin: 0px;
         margin-left: 15px;
     }
-
+    
 }
 
 @media screen and (min-width: 1024px) {
@@ -207,5 +208,9 @@ svg {
         margin: 0px;
         margin-left: 15px;
         margin-bottom: 5px;
+    }
+
+    .topHomepage{
+        height:650px
     }
 }

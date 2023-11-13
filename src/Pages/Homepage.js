@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import '../Assets/Styles/Homepage.css'
 // import { Link } from 'react-router-dom'
 // import ContactBanner from '../Components/Banners/ContactBanner'
-import Work from './Work'
+import Work from './WorkHomepage'
 
 
 
@@ -23,13 +23,15 @@ const Homepage = () => {
                 <div className='leftAsideText '>
                     <h1>Forward-thinking Frontend Developer</h1>
                     <h2>China Pickering</h2>
-                    <h3>Making the big jump from the world of healthcare to tech./Currently a front-end intern at <span>Digiphragm.</span></h3>
+                    <h3>Making the big jump from the world of healthcare to tech</h3>
+                    <h4>Currently a front-end intern at <span>Digiphragm.</span></h4>
                     <button>View all work</button>
                 </div>
             </div>
             <section className='homepageWork'>
-                <div className='text-black bg-white'>
-                    <h1>These are a selection of my work.</h1>
+                <div className='text-black bg-white py-5 px-3'>
+                <h1>My Work.</h1>
+                    <h2>These are a selection of my work.</h2>
                 </div>
                 <Work />
             </section>

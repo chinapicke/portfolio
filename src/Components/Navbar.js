@@ -21,10 +21,16 @@ const Navbar = () => {
           <li>
             {/* <h1>MENU</h1> */}
             {!showNav ?
-              <FontAwesomeIcon icon={faBars} className='navbarBars'
-                onClick={() => setShowNav(!showNav)} /> :
-              <FontAwesomeIcon icon={faX}
-                onClick={() => setShowNav(!showNav)} />
+              <div className='flex flex-row'>
+                <p>MENU</p>
+                <FontAwesomeIcon icon={faBars} className='navbarBars'
+                  onClick={() => setShowNav(!showNav)} />
+              </div> :
+              <div className='flex flex-row'>
+                <p>CLOSE</p>
+                <FontAwesomeIcon icon={faX}
+                  onClick={() => setShowNav(!showNav)} />
+              </div>
             }
 
           </li>
@@ -32,7 +38,19 @@ const Navbar = () => {
       </header>
       <div className='navbar'>
         {showNav ?
-          <div className='navbarOptions flex flex-col animatable justify-center items-center'>
+          <div className='navbarOptions largeNavIcons flex flex-col animatable justify-center items-center'>
+            {!showNav ?
+              <div className='flex flex-row'>
+                <p>MENU</p>
+                <FontAwesomeIcon icon={faBars} className='navbarBars'
+                  onClick={() => setShowNav(!showNav)} />
+              </div> :
+              <div className='flex flex-row'>
+                <p>CLOSE</p>
+                <FontAwesomeIcon icon={faX}
+                  onClick={() => setShowNav(!showNav)} />
+              </div>
+            }
             <NavLink to='/about' className='navbarFullScreenOptions animatableWord'>
               About
             </NavLink>

@@ -11,7 +11,7 @@
 
 
 .navbarList{
-    padding-top: 10px;
+    padding-top: 20px;
     background-color: black;
 }
 
@@ -22,11 +22,11 @@
 
 .navbarList li{
     list-style: none;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .logo{
-    width:50px;
+    width:70px;
 }
 
 .navbarBars{
@@ -43,7 +43,6 @@
     position:absolute;
 }
 .navbarOptions{
-    margin-top:40px;
     background-color: black;
     width:100vw;
     height:100vh;
@@ -88,6 +87,14 @@
     to { clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
   }
 
+  .navbarList li p{
+    margin-top: 8px;
+    margin-right:10px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color:white;
+  }
+
 @media screen and (min-width:700px) {
 
     .navbarList{
@@ -125,20 +132,25 @@
         margin-left: 20px;
     }
 
+    .navbarList li p{
+
+        color:black;
+      }
+
     .navbarList li{
        font-size: 30px;
        display: flex;
     }
     .navbarLayout{
         display: grid;
-        grid-template-columns: 90% 10%;
+        grid-template-columns: 85% 15%;
     }
     .navbarBars{
         color:black
     }
 
     .fullscreenTopBar{
-        width:90%;
+        width:85%;
         background-color: black;
     }
 }

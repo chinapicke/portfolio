@@ -13,8 +13,8 @@ const Layout = () => {
   return (
     <>
       <div className='fullscreenTopBar hidden lg:flex justify-between'>
-        <NavLink className='homeNav' to="/">
-          <img src={Logo} alt='page logo' className='logo' />
+        <NavLink className='homeNav px-3 pt-2' to="/">
+          <img src={Logo} alt='page logo' className='logo largeLogo' />
         </NavLink>
       </div>
       <div className='navbarLayout'>

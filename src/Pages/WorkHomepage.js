@@ -5,7 +5,7 @@ import VanillaCards from '../Components/VanillaCards'
 
 
 
-const Work = () => {  
+const WorkHomepage = () => {  
   const AnimationSettings = {
     transition: { duration: 0.5 },
     initial: { opacity: 0, y: -20 },
@@ -23,7 +23,7 @@ const Work = () => {
     </div>
     // <motion.div
     //   {...AnimationSettings}
-    //   className="workPage">
+    //   className="WorkHomepagePage">
     //   <div className="projectCards">
     //     <ReactCards />
     //     <VanillaCards />
@@ -32,4 +32,4 @@ const Work = () => {
   )
 }
 
-export default Work
+export default WorkHomepage

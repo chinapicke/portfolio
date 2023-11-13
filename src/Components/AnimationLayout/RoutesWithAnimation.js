@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Homepage from '../../Pages/Homepage';
 import About from '../../Pages/About';
 import Layout from '../Layout';
-import Work from '../../Pages/Work';
+import WorkHomepage from '../../Pages/WorkHomepage';
 import Contact from '../../Pages/Contact';
 // import SavedHook from '../../Context/savedHooks';
 
@@ -19,7 +19,7 @@ const RoutesWithAnimation = () => {
       <Route element={<Layout />}>
         <Route index element={<Homepage />} />
         <Route path="/about" element={<About />} />
-        <Route path="/work" element={<Work />} />
+        <Route path="/workHomepage" element={<WorkHomepage />} />
         <Route path="/contact" element={<Contact />} />
       </Route>
     </Routes>
