@@ -4,7 +4,7 @@
     {
         "id" : 1,
         "projectname": "gutenBooks",
-        "description": "Responsive web app to read free classical books on the go without the use of an extra app or software.",
+        "description": "Responsive web app to read free classical books on the go.",
         "quickDescription":"Read free classical books on the go",
         "image":"/Images/3.jpg",
         "imageFullScreen":"/Images/gutenvertical.png",
@@ -14,7 +14,7 @@
     {
         "id" : 2,
         "projectname": "ShopIt",
-        "description": "Makeup e-commerce page made using UI from Behance.",
+        "description": "Makeup e-commerce web page",
         "quickDescription":"Makeup e-commerce",
         "image": "/Images/1.jpg",
         "imageFullScreen":"/Images/shopitvertical.png",

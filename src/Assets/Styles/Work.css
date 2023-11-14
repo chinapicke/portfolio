@@ -6,22 +6,36 @@
 .cardText{
   padding: 1rem 7% !important;
   height:200px;
+  color:rgb(113, 113, 113)
   /* word-wrap: break-word; */
 }
 
 .fullScreenProjectCard{
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-}
-
-.fullScreenProjectCard{
+  display: flex;
+  flex-direction: row;
   padding: 0px 10%;
   margin-bottom: 10rem;
 }
 
+.fullScreenProjectCardJS{
+  display: flex;
+  flex-direction: row;
+  padding: 0px 10%;
+  margin-bottom: 10rem;
+}
+
+.fullScreenProjectCardJS:nth-child(2n){ /* or: :nth-child(odd) */
+  flex-direction: row-reverse;
+
+}
+
+
+
 .appImageFullscreen{
   object-fit: cover;
   border-radius: 6px;
+  width:500px;
+  height: auto;
 /* margin:20px;
 width:400px;
 /* height: 300px; */
@@ -29,6 +43,8 @@ width:400px;
 
 .projectText{
   padding-left: 50px;
+  color:rgb(113, 113, 113)
+
 }
 
 .projectText h2{
@@ -55,10 +71,12 @@ width:400px;
 .largeLogo{
   position: fixed;
 }
+.fullScreenProjectCard:nth-child(2n+1){ /* or: :nth-child(odd) */
+  flex-direction: row-reverse;
 
-.appImage{
-  border-radius: 6px;
 }
+
+
 
 /* .cardText {
   padding: 1rem 7% !important;
@@ -112,5 +130,9 @@ width:400px;
   @media screen and (min-width:768px){
     .cardText {
       height: auto;
+  }
+
+  .appImage{
+    border-radius: 6px;
   }
   }

@@ -20,6 +20,9 @@ const WorkHomepage = () => {
     <div>
       <ReactCards />
       <VanillaCards />
+      <div> 
+        <button>view all projects</button>
+      </div>
     </div>
     // <motion.div
     //   {...AnimationSettings}
