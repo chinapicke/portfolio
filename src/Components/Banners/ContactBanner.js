@@ -3,14 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faPaperPlane, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from 'react-router-dom'
-import { useState } from 'react'
-
-
+import {useState} from 'react'
 
 
 const ContactBanner = () => {
 
-    // state changes to open and close number and email address when clicked on 
+// state changes to open and close number and email address when clicked on 
     // below state is if the text is shown or not
     const [showAddress, setShowAddress] = useState(false)
     // this is where the state is shown if it is true 
@@ -18,7 +16,7 @@ const ContactBanner = () => {
 
     // pass in id so that the item with the specific id can be added to the contactShown state/array
     const contactShow = (id) => {
-        setShowAddress(!showAddress)
+        setShowAddress(current => !current)
         setContactShown(id)
     }
 

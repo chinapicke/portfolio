@@ -1,15 +1,18 @@
-import React from 'react';
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from '../Assets/Images/logo.png';
 import '../Assets/Styles/Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
+// import usePortfolioContextHooks from '../CustomHook/usePortfolioContextHooks';
+
 
 
 const Navbar = () => {
 
   const [showNav, setShowNav] = useState(false);
+
+
 
   return (
     <div className='navbarContainer'>

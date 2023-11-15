@@ -133,9 +133,8 @@
     }
 
     .navbarList li p{
-
         color:black;
-      }
+    }
 
     .navbarList li{
        font-size: 30px;
@@ -153,4 +152,36 @@
         width:85%;
         background-color: black;
     }
+
+    .navbarLayout{
+        display: none;
+    }
+
+    .navbarFullContainer{
+        display: grid;
+        grid-template-columns: 85% 15% ;
+    }
+    
+    .x{
+        color:black
+    }
+
+    .navbarOptionsFull.largeNavIconsFull.flex.flex-col.animatable.justify-center.items-center {
+        position: fixed;
+        background-color: white;
+        bottom:3px;
+        /* background-color: black; */
+        height: 100vh;
+        width: 100vw;
+    }
+
+    /* .closeFullScreen{
+        background-color: black;
+        color:white;
+    } */
+
+    .closeBackground{
+        color:white !important;
+    }
+
 }

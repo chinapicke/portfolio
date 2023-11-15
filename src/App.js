@@ -1,15 +1,13 @@
-import Navbar from './Components/Navbar';
+// import Navbar from './Components/Navbar';
 import './App.css';
 import './index.css';
-import { BrowserRouter } from "react-router-dom";
+// import { BrowserRouter } from "react-router-dom";
 import LocationProvider from "./Components/AnimationLayout/LocationProvider";
 import RoutesWithAnimation from './Components/AnimationLayout/RoutesWithAnimation';
-import SavedHook from './Context/savedHooks';
 import { motion} from "framer-motion";
 
 function App() {
 
-  const { showNav } = SavedHook()
 
   const AnimationSettings = {
     transition: { duration: 0.5 },
