@@ -19,14 +19,7 @@ import { faRotateRight } from '@fortawesome/free-solid-svg-icons'
 
 
 const About = () => {
-  // const routeVariants = {
-  //     initial: {
-  //         x: '50vh'
-  //     },
-  //     final: {
-  //         x: '0vh'
-  //     }
-  // }
+  
 
   const AnimationSettings = {
     transition: { duration: 0.5 },
@@ -60,21 +53,32 @@ const About = () => {
         <img src={PhotoMe} alt='ProfilePicture' className='profilePicture' />
       </div>
       <div className='personalInfo'>
-        <h2 className='aboutH2'>I'm China Pickering.</h2>
-        <h3 className='aboutH3'>Junior Front-end Developer with a background in healthcare and strong problem-solving skills.</h3>
+        <h2 className='aboutH2'>I am a passionate developer with a keen for the fine details.</h2>
+        <h3 className='aboutH3'>Hi, I'm China Pickering. As a dedicated healthcare professional with a passion for technology, 
+        I am excited to transition into the dynamic field of front-end development, where I can merge my expertise in healthcare with my creativity and technical skills.</h3>
       </div>
 
     <div className='middleSectionAboutPg'>
       <div className='middleSectionItem' id='aboutText'>
-        <p >Working in healthcare during a pandemic increased my curiosity for coding but with time pressures, I was unable to teach myself. Finally I started my life time goal of travelling the world and found the time to fall in love with coding.</p>
-        <p> Despite travelling in Asia and time difference, I completed a Front-End Development 16-week Bootcamp with Trilogy and refined my skills a Front-End Developer. Eager to find my place in a collaborative team and continue to develop my knowledge and skills.</p>
+        <p >Working in healthcare during a pandemic increased my curiosity for technology and the capabilities on coding. It wasn't until I took a year travelling the world that I fully dived in coding and instantly fell in love with it.</p>
+        <p> Despite travelling in Asia and time difference, I completed a 16-week Bootcamp in the UK and refined my skills to help me get a further understanding of HTML, CSS, Javascript, React and Node.js. 
+          </p>
+        <p>After my bootcamp, I still didn't feel 'job ready', so I continued to complete projects independently. It was until I arrived back in the UK that I decided the next step was to get hands-on experience as a developer and signed up for a 12 week virtual internship. During my internship, I was able to 
+          leverage my healthcare background to contribute to the development of intuitive and accessible interfaces that empower healthcare professionals and patients.</p>
+        <p>I'm truly excited to see what the future holds and eager to find my place in a collaborative team where I can continue to do what I love!</p>
       </div>
+    </div>
+
+    <div className='aboutMiddleBanner'>
+    </div>
+
       <div id='waterfallImgDiv' className='middleSectionItem'>
         <img src={Bali} alt='Waterfall' className='waterfallAbout'></img>
       </div>
       <div id='aboutText' className='middleSectionItem'>
-        <p> Through my experience I'm able to work under high levels of pressure, take initative with my work, an ability to work indepednently but also collaboratively within a team and to problem-solve through any challenges I face on the day-to-day job.</p>
-      </div>
+        <h2>How I work</h2>
+        <p> Through my experience I'm able to work under high levels of pressure and take initative with my work. I bring strong communication and collaboration abilities, honed through working closely with cross-functional teams in healthcare settings
+          Futhermore, I am confident in working indepednently and collaboratively, whilst being able to problem-solve through any challenges I face.</p>
       </div>
 
       <div className='buttonCvDiv'>
@@ -93,7 +97,7 @@ const About = () => {
         </button>
       </div>
 
-      <h4>Skills</h4>
+      <h4>Listed below are the technologies I know.</h4>
       <div className='skillsDiv'>
         <div className='skillsList'>
           <img src={HTML} alt='HTML skill' className='skillIcon' />
