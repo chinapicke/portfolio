@@ -103,6 +103,16 @@
     /* background-color: black; */
     height: 100vh;
     width: 100vw;
+    z-index:2
+}
+
+svg.svg-inline--fa.fa-x.x {
+    color: black;
+}
+
+.quickLinksDiv{
+    margin-right:20px;
+    margin-left:20px;
 }
   
 
@@ -159,10 +169,10 @@
         color:black
     }
 
-    .fullscreenTopBar{
+    /* .fullscreenTopBar{
         width:85%;
         background-color: black;
-    }
+    } */
 
     /* .navbarLayout{
         display: none;
@@ -176,6 +186,9 @@
     .x{
         color:black
     }
+
+
+
 
     .navbarOptionsFull.largeNavIconsFull.flex.flex-col.animatable.justify-center.items-center {
         position: fixed;

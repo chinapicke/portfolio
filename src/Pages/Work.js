@@ -4,7 +4,7 @@ import VanillaCards from '../Components/VanillaCards'
 
 const Work = () => {
   return (
-    <div>
+    <div className="workContainer">
         <h1>My Work.</h1>
         <ReactCards />
       <VanillaCards />

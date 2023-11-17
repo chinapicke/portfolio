@@ -2,7 +2,8 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import '../Assets/Styles/Homepage.css'
 // import { Link } from 'react-router-dom'
-import ContactBanner from '../Components/Banners/ContactBanner'
+import { NavLink } from "react-router-dom";
+import Logo from '../Assets/Images/logo.png';
 import Work from './WorkHomepage'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons"
@@ -22,6 +23,9 @@ const Homepage = () => {
         <motion.div
             className='homepageContainer'
             {...AnimationSettings}>
+                {/* <NavLink className='homeNav px-3 ' to="/">
+          <img src={Logo} alt='page logo' className='logo largeLogo' />
+        </NavLink> */}
             <div className='topHomepage flex justify-center items-end'>
                 {/* <div className='homepageContactBanner'>
                     <ContactBanner />

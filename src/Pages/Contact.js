@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import '../Assets/Styles/Contact.css'
 
 const Contact = () => {
   const [contactInput, setContactInput] = useState({
@@ -35,35 +36,40 @@ const Contact = () => {
   return (
     <motion.div
     {...AnimationSettings}>
-        <div className="contactInnerContainer">
+        <div className="contactInnerContainer mt-10">
+          <div className="contractLabel">
+            <h1>CONTACT</h1>
+          </div>
+          <div>
           <h1>Get in touch with me.</h1>
-          <form>
-            <label htmlFor="name">Your Name</label>
+          <form className="flex flex-col items-center contactInputForm">
             <input 
             type='text'
             id='name'
             name='fullName'
+            placeholder="Your Name"
             onChange={handleChange} />
-            <label htmlFor="email">Your Email</label>
             <input 
             type='email'
             id='email'
             name='email'
+            placeholder="Your Email"
             onChange={handleChange} />
-            <label htmlFor="subject">Subject</label>
             <input 
             type='text'
             id='subject'
             name='subject'
+            placeholder="Subject"
             onChange={handleChange} />
-            <label htmlFor="message">Message</label>
             <input 
             type='text'
             id='message'
             name='message'
+            placeholder="Message"
             onChange={handleChange} />
             <button onClick={onSubmit}>Submit</button>
           </form>
+          </div>
         </div>
     </motion.div>
   )

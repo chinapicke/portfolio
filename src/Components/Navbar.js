@@ -54,6 +54,7 @@ const Navbar = () => {
                   onClick={() => setShowNav(!showNav)} />
               </div>
             }
+            
             <NavLink to='/about' className='navbarFullScreenOptions animatableWord'>
               About
             </NavLink>

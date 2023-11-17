@@ -1,5 +1,4 @@
 import { Outlet } from 'react-router-dom';
-import Navbar from './Navbar';
 import { NavLink } from "react-router-dom";
 import Logo from '../Assets/Images/logo.png';
 import '../Assets/Styles/Navbar.css';
@@ -9,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faPaperPlane, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 const Layout = () => {
   // ... perhaps some authentication logic to protect routes?
@@ -57,13 +57,13 @@ const Layout = () => {
 
   ]
 
+  const navigate = useNavigate()
+
 
   return (
     <>
-      <div className='fullscreenTopBar hidden lg:flex justify-between'>
-        <NavLink className='homeNav px-3 pt-2' to="/">
-          <img src={Logo} alt='page logo' className='logo largeLogo' />
-        </NavLink>
+      <div className='fullscreenTopBar hidden lg:flex justify-between px-3'>
+          <img src={Logo} alt='page logo' className='logo largeLogo mt-2' onClick={()=>navigate('/')}/>
       </div>
       {/* <div className='navbarLayout '>
         <Outlet />
@@ -73,6 +73,11 @@ const Layout = () => {
         <div className='navbarFull'>
           {showNav ?
             <div className='navbarOptionsFull largeNavIconsFull flex flex-col animatable justify-center items-center'>
+              <div className='flex flex-row'>
+                <p>CLOSE</p>
+                <FontAwesomeIcon icon={faX} className='x'
+                  onClick={() => setShowNav(!showNav)} />
+              </div>
               <NavLink to='/about' className='navbarFullScreenOptions animatableWord'>
                 About
               </NavLink>
@@ -116,7 +121,7 @@ const Layout = () => {
         </div>
 
       </div>
-      <div>
+      <section className='quickLinksDiv '>
         <h1>quick links</h1>
         <NavLink to='/about' className='navbarFullScreenOptions'>
           About
@@ -127,7 +132,7 @@ const Layout = () => {
         <NavLink to='/contact' className='navbarFullScreenOptions'>
           Contact
         </NavLink>
-      </div>
+      </section>
       <footer>
         <Footer />
       </footer>
