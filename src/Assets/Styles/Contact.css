@@ -7,7 +7,7 @@
 }
 
 .contractLabel h1{
-    margin-left:20px;
+    /* margin-left:20px; */
     writing-mode: vertical-lr;
     text-orientation: sideways-right;
     rotate:180deg
@@ -18,10 +18,19 @@
 border-bottom: 2px grey solid;
 }
 
+.formSubheading{
+    text-align: center;
+}
+
 @media screen and (min-width:768px){
     .contactInputForm input{
         width:60%;
     }
+
+    .contractLabel h1{
+        margin-left:20px;
+    }
+    
 }
 
 @media screen and (min-width:1024px){

@@ -41,7 +41,7 @@ const Contact = () => {
             <h1>CONTACT</h1>
           </div>
           <div>
-          <h1>Get in touch with me.</h1>
+          <h1 className="formSubheading">Get in touch with me.</h1>
           <form className="flex flex-col items-center contactInputForm">
             <input 
             type='text'
