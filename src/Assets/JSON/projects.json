@@ -6,6 +6,7 @@
         "quickDescription":"Budget for your next holiday",
         "image":"/Images/2.jpg",
         "imageFullScreen":"/Images/bbcvertical.png",
+        "projectMore":"/brokeButcultured",
         "deployedURL": "https://chinapicke.github.io/-broke-but-cultured/",
         "githubUrl": "https://github.com/chinapicke/-broke-but-cultured.git"    
     }, 
@@ -16,6 +17,7 @@
         "quickDescription":"Find current and 5 day weather forecast",
         "image":"/Images/weatherLaptop.jpg",
         "imageFullScreen":"/Images/9.jpg",
+        "projectMore":"/weatherApp",
         "deployedURL": "https://chinapicke.github.io/Weather_Forecast-/",
         "githubUrl": "https://github.com/chinapicke/Weather_Forecast-.git"      
     }, 
@@ -26,6 +28,7 @@
         "quickDescription":"Coding Quiz",
         "image":"/Images/11.jpg",
         "imageFullScreen":"/Images/10.jpg",
+        "projectMore":"/codeQuiz",
         "deployedURL": "https://chinapicke.github.io/Multiple-Choice-Quiz/",
         "githubUrl": "https://github.com/chinapicke/Multiple-Choice-Quiz.git"     
     }

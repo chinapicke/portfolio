@@ -6,7 +6,8 @@
 
 
 .topHomepage{
-    height:950px;
+    padding:90% 5% 10%;
+    /* height:950px; */
     background-color: black;
 }
 
@@ -76,9 +77,43 @@ svg {
     color: white;
 }
 
+.longArrow{
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    box-shadow: inset 0 0 0 2px;
+    width: 45px;
+    height: 6px
+}
+
+.longArrow::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    right: 0;
+    bottom: -2px
+}
+
 
 
 @media screen and (min-width: 768px) {
+
+    .topHomepage{
+        padding:40% 5% 10%;
+        /* height:650px; */
+        display:grid;
+        /* grid-template-columns: 85% 15%; */
+    }
+
     .homepageInnerContainer {
         grid-template-rows: 1fr;
         grid-template-columns: 2fr 2.5fr;
@@ -163,10 +198,19 @@ svg {
     }
 
     .topHomepage{
-        height:650px;
+        padding:25% 5% 5%;
+        /* height:650px; */
         display:grid;
         /* grid-template-columns: 85% 15%; */
     }
 
+}
 
+@media screen and (min-width:1200px){
+    .topHomepage{
+        padding:25% 5% 5%;
+        /* height:650px; */
+        display:grid;
+        /* grid-template-columns: 85% 15%; */
+    }
 }

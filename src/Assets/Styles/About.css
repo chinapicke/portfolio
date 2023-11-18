@@ -1,5 +1,5 @@
 .aboutContainer{
-    margin-top:20vh;
+    padding:40% 0% 0% 5%;
     color: black;
     margin-right: auto;
 }
@@ -146,10 +146,9 @@
     }
 
     .aboutContainer{
-        background-color:black;
-        color: white;
-        margin-left: 100px;
-        margin-right: 100px;
+        padding:20% 0% 0% 5%;
+        color: black;
+        margin-right: auto;
     }
     
 
@@ -163,10 +162,9 @@
         grid-template-columns: 1fr 1fr;
     }
     .aboutContainer{
-        background-color:black;
-        color: white;
-        margin-left: 125px;
-        margin-right: 125px;
+        padding:15% 0% 0% 5%;
+        color: black;
+        margin-right: auto;
     }
 
     .skillsDiv{

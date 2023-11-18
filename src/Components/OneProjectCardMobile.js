@@ -1,5 +1,5 @@
 
-function OneProjectCardMobile ({project}) {
+function OneProjectCardMobile({ project }) {
 
   // const [flip, setFlip] = useState(false)
 
@@ -17,17 +17,17 @@ function OneProjectCardMobile ({project}) {
       </div>
       {/* <div className="back"> */}
       <div className="cardText">
-        <h1 className="text-red-500">{project.projectname}</h1> 
+        <h1 className="text-red-500">{project.projectname}</h1>
         <h2>{project.quickDescription}</h2>
         {/* <h2>{project.deployedURL}</h2>
         <p>{project.githubUrl}</p> */}
         <div className='flex flex-row'>
-                    <div className='pl-1'>
-                    <button>view project</button>
-                <span className='circleShadow'></span>
-                    </div>
-                    
-                </div>
+          <div className='pl-1'>
+            <button>view project</button>
+            <span className='circleShadow'></span>
+          </div>
+
+        </div>
       </div>
     </div>
 

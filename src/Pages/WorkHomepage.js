@@ -2,6 +2,7 @@
 import '../Assets/Styles/Work.css'
 import ReactCards from "../Components/ReactCards";
 import VanillaCards from '../Components/VanillaCards'
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -12,6 +13,7 @@ const WorkHomepage = () => {
   //   animate: { opacity: 1, y: 0 },
   //   exit: { opacity: 0, y: -20 }
   // };
+const navigate = useNavigate()
 
 
 
@@ -21,7 +23,7 @@ const WorkHomepage = () => {
       <ReactCards />
       <VanillaCards />
       <div> 
-        <button>view all projects</button>
+        <button onClick={()=>navigate('/work')}>view all projects</button>
       </div>
     </div>
     // <motion.div

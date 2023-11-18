@@ -80,7 +80,7 @@ width:400px;
   /* margin-top:20vh; */
   /* margin-left:20p */
   display: grid;
-    padding:20% 0% 0% 5%;
+    padding:15% 0% 0% 5%;
     grid-template-columns: 10% 90%;
 }
 
