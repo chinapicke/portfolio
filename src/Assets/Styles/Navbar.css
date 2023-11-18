@@ -51,6 +51,9 @@
 
 .navbarFullScreenOptions {
     text-decoration: none;
+    padding:5px;
+    margin-right: 3.5rem;
+
 }
 
 .animatable {
@@ -111,9 +114,14 @@ svg.svg-inline--fa.fa-x.x {
 }
 
 .quickLinksDiv{
-    margin-right:20px;
-    margin-left:20px;
+    padding: 10% 15%;
 }
+
+.quickLinksDiv h1 {
+    padding-bottom: 20px;
+}
+
+
   
 
 @media screen and (min-width:700px) {
@@ -168,15 +176,6 @@ svg.svg-inline--fa.fa-x.x {
     .navbarBars{
         color:black
     }
-
-    /* .fullscreenTopBar{
-        width:85%;
-        background-color: black;
-    } */
-
-    /* .navbarLayout{
-        display: none;
-    } */
 
     .navbarFullContainer{
         display: grid;

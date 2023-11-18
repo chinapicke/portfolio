@@ -123,6 +123,7 @@ const Layout = () => {
       </div>
       <section className='quickLinksDiv '>
         <h1>quick links</h1>
+        <div className='quickLinks'>
         <NavLink to='/about' className='navbarFullScreenOptions'>
           About
         </NavLink>
@@ -132,6 +133,8 @@ const Layout = () => {
         <NavLink to='/contact' className='navbarFullScreenOptions'>
           Contact
         </NavLink>
+
+        </div>
       </section>
       <footer>
         <Footer />

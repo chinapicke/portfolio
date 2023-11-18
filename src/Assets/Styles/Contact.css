@@ -1,16 +1,19 @@
 .contactInnerContainer{
     display: grid;
+    padding:20% 10% 0 15%;
     grid-template-columns: 10% 90%;
-    margin-top:20vh;
-    margin-left:20px;
-    margin-right:20px;
 }
 
-.contractLabel h1{
-    /* margin-left:20px; */
+.sideTitleLabel h1{
+    font-size: 12px;
     writing-mode: vertical-lr;
     text-orientation: sideways-right;
-    rotate:180deg
+    rotate:180deg;
+    position: fixed;
+    height: 100vh;
+    bottom: 50vh;
+    display: flex;
+    /* mix-blend-mode: difference; */
 }
 
 .contactInputForm input{
@@ -19,22 +22,42 @@ border-bottom: 2px grey solid;
 }
 
 .formSubheading{
-    text-align: center;
+    letter-spacing: -1px;
 }
+
+input{
+    height:30px
+}
+input#message{
+    height:150px;
+}
+
+.contractLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submitBtn{
+    
+}
+
+
 
 @media screen and (min-width:768px){
     .contactInputForm input{
-        width:60%;
+        width:100%;
     }
 
     .contractLabel h1{
         margin-left:20px;
     }
+
     
 }
 
 @media screen and (min-width:1024px){
     .contactInputForm input{
-        width:60%;
+        width:100%;
     }
 }

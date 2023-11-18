@@ -37,7 +37,7 @@ const Contact = () => {
     <motion.div
     {...AnimationSettings}>
         <div className="contactInnerContainer mt-10">
-          <div className="contractLabel">
+          <div className="sideTitleLabel">
             <h1>CONTACT</h1>
           </div>
           <div>
@@ -67,7 +67,7 @@ const Contact = () => {
             name='message'
             placeholder="Message"
             onChange={handleChange} />
-            <button onClick={onSubmit}>Submit</button>
+            <button className='submitBtn' onClick={onSubmit}>Submit</button>
           </form>
           </div>
         </div>

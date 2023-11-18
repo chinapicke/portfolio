@@ -5,9 +5,7 @@ import '../Assets/Styles/Homepage.css'
 import { NavLink } from "react-router-dom";
 import Logo from '../Assets/Images/logo.png';
 import Work from './WorkHomepage'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons"
-// import { faPaperPlane, faPhone } from '@fortawesome/free-solid-svg-icons'
+// import { useNavigate } from 'react-router-dom';
 
 
 
@@ -19,6 +17,13 @@ const Homepage = () => {
         animate: { opacity: 1, y: 0 },
         exit: { opacity: 0, y: -20 }
     };
+
+    // const navigate = useNavigate()
+
+    // const allProjects = () =>{
+    //     navigate('work')
+    // }
+
     return (
         <motion.div
             className='homepageContainer'
@@ -35,7 +40,10 @@ const Homepage = () => {
                     <h2>China Pickering</h2>
                     <h3>Making the big jump from the world of healthcare to tech</h3>
                     <h4>Currently a front-end intern at <span>Digiphragm.</span></h4>
-                    <button>View all work</button>
+                    <NavLink to={'/work'}>
+                        <button>View all works</button>
+                    </NavLink>
+                    {/* <button onClick={allProjects}>View all work</button> */}
                 </div>
                 <aside className='fullscreenMenuAside'>
                     
