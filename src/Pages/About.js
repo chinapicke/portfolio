@@ -11,7 +11,7 @@ import Tailwind from '../Assets/Images/tailwind.png'
 import Figma from '../Assets/Images/figma.png'
 import jquery2 from '../Assets/Images/jquery2.png'
 import Node2 from '../Assets/Images/node2.webp'
-import PhotoMe from '../Assets/Images/me.png'
+import baliMountain from '../Assets/Images/baliMountain.png'
 import Bali from '../Assets/Images/bali.JPG'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -19,7 +19,7 @@ import { faRotateRight } from '@fortawesome/free-solid-svg-icons'
 
 
 const About = () => {
-  
+
 
   const AnimationSettings = {
     transition: { duration: 0.5 },
@@ -48,34 +48,41 @@ const About = () => {
       //   animate="final"
       {...AnimationSettings}
     >
-      <h1 className='aboutMainHeading'>About</h1>
-      <div className='profilePhotoDiv'>
-        <img src={PhotoMe} alt='ProfilePicture' className='profilePicture' />
-      </div>
-      <div className='personalInfo'>
-        <h2 className='aboutH2'>I am a passionate developer with a keen for the fine details.</h2>
-        <h3 className='aboutH3'>Hi, I'm China Pickering. As a dedicated healthcare professional with a passion for technology, 
-        I am excited to transition into the dynamic field of front-end development, where I can merge my expertise in healthcare with my creativity and technical skills.</h3>
+      <div className='flex flex-col-reverse mb-5 topAbout'>
+        <div className='profilePhotoDiv flex justify-center'>
+          <img src={baliMountain} alt='ProfilePicture' className='profilePicture' />
+        </div>
+        <div className='personalInfo'>
+        <h1 className='aboutH3 text-center mb-5'>Hi, I'm China Pickering. A dedicated front-end developer with a background in healthcare and a passion for travelling.</h1>
+        </div>
       </div>
 
-    <div className='middleSectionAboutPg'>
-      <div className='middleSectionItem' id='aboutText'>
-        <p >Working in healthcare during a pandemic increased my curiosity for technology and the capabilities on coding. It wasn't until I took a year travelling the world that I fully dived in coding and instantly fell in love with it.</p>
-        <p> Despite travelling in Asia and time difference, I completed a 16-week Bootcamp in the UK and refined my skills to help me get a further understanding of HTML, CSS, Javascript, React and Node.js. 
+      <div className='middleSectionAboutPg'>
+        <div className='middleSectionItem' id='aboutText'>
+          <p>Transitioning from mending the body to crafting digital landscapes, I bring a unique perspective to front-end development, where my background as a physiotherapist fuels my passion for 
+            designing user interfaces which are captivating and the user' friendly.</p>
+          <p >Working in healthcare during a pandemic increased my curiosity for technology and the capabilities of coding. It wasn't until I took a year travelling the world that I fully dived in coding and instantly fell in love with it.</p>
+          <p> Despite travelling in Asia and the time difference, I completed a 16-week Bootcamp in the UK and refined my skills to help further my understanding of HTML, CSS, Javascript, React and Node.js.
           </p>
-        <p>After my bootcamp, I still didn't feel 'job ready', so I continued to complete projects independently. It was until I arrived back in the UK that I decided the next step was to get hands-on experience as a developer and signed up for a 12 week virtual internship. During my internship, I was able to 
-          leverage my healthcare background to contribute to the development of intuitive and accessible interfaces that empower healthcare professionals and patients.</p>
-        <p>I'm truly excited to see what the future holds and eager to find my place in a collaborative team where I can continue to do what I love!</p>
       </div>
-    </div>
+      <div className='banner bg-black h-24'>
 
-    <div className='aboutMiddleBanner'>
-    </div>
+      </div>
+      <div className='middleSectionItem pt-5'>
+          <p>After my bootcamp, I continued to travelled until I returned back to the UK, where I completed a 12-week internship at a healthtech company.
+            I was able to leverage my healthcare background to collaborate and develop a worldwide used contracting website that monitored the effectiveness of health technologies and services.
+            </p>
+          <p>I'm truly excited to see what the future holds and eager to find my place in a collaborative team where I can continue to do what I love!</p>
+        </div>
+      </div>
+
+      <div className='aboutMiddleBanner'>
+      </div>
 
       <div id='waterfallImgDiv' className='middleSectionItem'>
         <img src={Bali} alt='Waterfall' className='waterfallAbout'></img>
       </div>
-      <div id='aboutText' className='middleSectionItem'>
+      <div id='softSkillsSection' className='middleSectionItem'>
         <h2>How I work</h2>
         <p> Through my experience I'm able to work under high levels of pressure and take initative with my work. I bring strong communication and collaboration abilities, honed through working closely with cross-functional teams in healthcare settings
           Futhermore, I am confident in working indepednently and collaboratively, whilst being able to problem-solve through any challenges I face.</p>
@@ -83,17 +90,7 @@ const About = () => {
 
       <div className='buttonCvDiv'>
         <button id={!downloadCV ? 'static-CVBtn' : 'clicked-CVBtn'} className='CVBtn' onClick={clickedCV}>
-
-          {
-            !downloadCV ?
-              <span className='frontButton'>
-                myCV
-              </span> :
-              <span className='frontButton'>
-                Downloading
-                <span><FontAwesomeIcon className='spinningIcon' icon={faRotateRight} spin /></span>
-              </span>
-          }
+          CV
         </button>
       </div>
 

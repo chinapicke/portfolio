@@ -1,9 +1,9 @@
 import '../Assets/Styles/Work.css'
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { FaGithub } from "react-icons/fa6";
 
 const OneProjectCardFullScreenJS = ({project}) => {
 
-    const navigate = useNavigate()
     return (
         <div className='fullScreenProjectCardJS'>
             <div className="projectImage" >
@@ -17,10 +17,12 @@ const OneProjectCardFullScreenJS = ({project}) => {
                 <p>{project.githubUrl}</p> */}
                 <div className='flex flex-row'>
                     <div className='pl-1'>
-                        {/* <NavLink t>
+                        <Link to={project.deployedURL}>
                             view project
-                        </NavLink> */}
-                    <button onClick={()=>navigate(project.projectMore)}>view project</button>
+                        </Link>
+                        <Link to={project.githubUrl}>
+                    <FaGithub />
+                    </Link>
                 <span className='circleShadow'></span>
                     </div>
                     

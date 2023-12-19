@@ -29,7 +29,7 @@ const Navbar = () => {
                 <FontAwesomeIcon icon={faBars} className='navbarBars'
                   onClick={() => setShowNav(!showNav)} />
               </div> :
-              <div className='flex flex-row'>
+              <div className='flex flex-row hidden'>
                 <p>CLOSE</p>
                 <FontAwesomeIcon icon={faX}
                   onClick={() => setShowNav(!showNav)} />
@@ -48,7 +48,7 @@ const Navbar = () => {
                 <FontAwesomeIcon icon={faBars} className='navbarBars'
                   onClick={() => setShowNav(!showNav)} />
               </div> :
-              <div className='flex flex-row'>
+              <div className='flex flex-row hidden'>
                 <p>CLOSE</p>
                 <FontAwesomeIcon icon={faX}
                   onClick={() => setShowNav(!showNav)} />

@@ -105,7 +105,7 @@ const Layout = () => {
                       <FontAwesomeIcon icon={faBars} className='navbarBars'
                         onClick={() => setShowNav(!showNav)} />
                     </div> :
-                    <div className='flex flex-row closeFullScreen'>
+                    <div className='flex flex-row closeFullScreen hidden'>
                       <p>CLOSE</p>
                       <FontAwesomeIcon icon={faX}
                         onClick={() => setShowNav(!showNav)} className='x' />

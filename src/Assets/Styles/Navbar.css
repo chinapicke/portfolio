@@ -12,7 +12,7 @@
 
 .navbarList{
     padding-top: 20px;
-    background-color: black;
+    background-color: #121212;
 }
 
 .navbarList a{
@@ -43,7 +43,7 @@
     position:absolute;
 }
 .navbarOptions{
-    background-color: black;
+    background-color: #121212;
     width:100vw;
     height:100vh;
     z-index: 2;
@@ -142,7 +142,7 @@ svg.svg-inline--fa.fa-x.x {
 
     .navbarLineStart{
         display: inline;
-        background-color: black;
+        background-color: #121212;
         color: black;
         border-color: black;
         height: 20px;

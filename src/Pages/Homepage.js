@@ -34,10 +34,9 @@ const Homepage = () => {
                     <ContactBanner />
                 </div> */}
                 <div className='leftAsideText '>
-                    <h1>Forward-thinking Frontend Developer</h1>
-                    <h2>China Pickering</h2>
+                    <h1>Hi, my name is <span>China Pickering</span></h1>
+                    <h2>Frontend Developer</h2>
                     <h3>Making the big jump from the world of healthcare to tech</h3>
-                    <h4>Currently a front-end intern at <span>Digiphragm.</span></h4>
                     <div className='flex flex-row items-center'>
                         <div className='pl-1'>
                         <button onClick={() => navigate('/work')}>View all works</button>

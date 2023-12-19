@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+import { FaGithub } from "react-icons/fa6";
 import '../Assets/Styles/Work.css'
 
 const OneProjectCardFullscreen = ({ project }) => {
@@ -14,7 +16,12 @@ const OneProjectCardFullscreen = ({ project }) => {
                 <p>{project.githubUrl}</p> */}
                 <div className='flex flex-row'>
                     <div className='pl-1'>
+                        <Link to={project.deployedURL}>
                     <button>view project</button>
+                    </Link>
+                    <Link to={project.githubUrl}>
+                    <FaGithub />
+                    </Link>
                 <span className='circleShadow'></span>
                     </div>
                     

@@ -1,7 +1,8 @@
 .aboutContainer{
-    padding:40% 0% 0% 5%;
-    color: black;
-    margin-right: auto;
+    /* padding:40% 0% 0% 5%; */
+    padding-top: 25%;
+    color: #474747;
+    /* margin-right: 20px; */
 }
 
 .skillsDiv{
@@ -21,6 +22,16 @@
 .middleSectionAboutPg{
     display: flex;
     flex-direction: column;
+    font-size: 1rem;
+    line-height: 3.2rem;
+    color: #474747;
+}
+
+.topAbout{
+    padding: 0px 10% 0% 10%;
+}
+.middleSectionItem{
+    padding: 0px 8% 0% 10%;
 }
 
 #static-CVBtn{
@@ -66,16 +77,15 @@
     flex-direction: row;
 }
 
-.profilePhotoDiv{
+/* .profilePhotoDiv{
     position:relative;
     top: -120px;
     left: 145px;
-}
+} */
 
 .profilePicture{
-    width:120px; 
-    border-radius: 50%;
-    position:absolute; 
+    width:50vh; 
+    /* border-radius: 50%; */
 }
 .aboutMainHeading{
     font-size: 10vh;
@@ -84,6 +94,13 @@
 .aboutH2{
     margin: 0px;
     font-size: 20px;
+}
+
+#softSkillsSection{
+    font-size: 1rem;
+    line-height: 3.2rem;
+    color: #474747;
+    padding-top:20px;
 }
 
 .aboutH3{
@@ -99,7 +116,7 @@
 }
 
 .waterfallAbout{
-    width:250px;
+    width:60vh;
 }
 
 #waterfallImgDiv{
