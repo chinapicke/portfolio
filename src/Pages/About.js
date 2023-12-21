@@ -10,12 +10,14 @@ import Atom from '../Assets/Images/atom.png'
 import Tailwind from '../Assets/Images/tailwind.png'
 import Figma from '../Assets/Images/figma.png'
 import jquery2 from '../Assets/Images/jquery2.png'
-import Node2 from '../Assets/Images/node2.webp'
+import Node2 from '../Assets/Images/node.png'
 import baliMountain from '../Assets/Images/baliMountain.png'
 import Bali from '../Assets/Images/bali.JPG'
-import { useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faRotateRight } from '@fortawesome/free-solid-svg-icons'
+import CV from '../Assets/CV.pdf'
+import { Link } from 'react-router-dom'
+// import { useState } from 'react'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faRotateRight } from '@fortawesome/free-solid-svg-icons'
 
 
 const About = () => {
@@ -28,17 +30,7 @@ const About = () => {
     exit: { opacity: 0, y: -20 }
   };
 
-  const [downloadCV, setDownloadCV] = useState(false);
-  const [isDownloaded, setIsDownloaded] = useState(false);
 
-  const clickedCV = () => {
-    setDownloadCV(true);
-    setTimeout(() => {
-      setIsDownloaded(true);
-      setDownloadCV(false);
-      setTimeout(() => setIsDownloaded(false), 5000)
-    }, 2000);
-  }
 
   return (
     <motion.div
@@ -58,6 +50,10 @@ const About = () => {
       </div>
 
       <div className='middleSectionAboutPg'>
+      <div className='middleSectionItem'>
+        <h2>/01 STORY</h2>
+        <h3>A little about me.</h3>
+        </div>
         <div className='middleSectionItem' id='aboutText'>
           <p>Transitioning from mending the body to crafting digital landscapes, I bring a unique perspective to front-end development, where my background as a physiotherapist fuels my passion for 
             designing user interfaces which are captivating and the user' friendly.</p>
@@ -83,18 +79,15 @@ const About = () => {
         <img src={Bali} alt='Waterfall' className='waterfallAbout'></img>
       </div>
       <div id='softSkillsSection' className='middleSectionItem'>
-        <h2>How I work</h2>
+      <h2>/02 THE PROCESS</h2>
+        <h3>How I work.</h3>
         <p> Through my experience I'm able to work under high levels of pressure and take initative with my work. I bring strong communication and collaboration abilities, honed through working closely with cross-functional teams in healthcare settings
           Futhermore, I am confident in working indepednently and collaboratively, whilst being able to problem-solve through any challenges I face.</p>
       </div>
 
-      <div className='buttonCvDiv'>
-        <button id={!downloadCV ? 'static-CVBtn' : 'clicked-CVBtn'} className='CVBtn' onClick={clickedCV}>
-          CV
-        </button>
-      </div>
-
-      <h4>Listed below are the technologies I know.</h4>
+      <div className='middleSectionItem pt-5'>
+      <h2>/03 SKILLS</h2>
+        <h3>What I use.</h3>
       <div className='skillsDiv'>
         <div className='skillsList'>
           <img src={HTML} alt='HTML skill' className='skillIcon' />
@@ -108,6 +101,24 @@ const About = () => {
           <img src={Tailwind} alt='Tailwind skill' className='skillIcon' />
           <img src={Figma} id='figmaIcon' alt='Figma skill' className='skillIcon' />
         </div>
+      </div>
+      </div>
+
+      <div className='middleSectionItem pt-5'>
+      <h2>/04 MORE INFO</h2>
+        <h3>Find out more about me.</h3>
+        <Link to={CV}
+        download="China_Pickering_CV"
+        target="_blank"
+        rel="noreferrer"
+        >CV.</Link>
+
+      </div>
+
+      <div className='middleSectionItem pt-5'>
+      <h2>/05 CONTACT</h2>
+        <h3>Social.</h3>
+        <h3>Email.</h3>
       </div>
     </motion.div>
   )
