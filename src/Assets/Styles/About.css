@@ -5,25 +5,40 @@
     /* margin-right: 20px; */
 }
 
-.skillsDiv{
+skillsDiv {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 .skillsList{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
+    gap:2rem;
+    justify-items: center;
 }
 
 .skillIcon{
     width: 50px;
     height:50px; 
-    margin:10px
+    /* margin:10px */
 }
 .middleSectionAboutPg{
     display: flex;
     flex-direction: column;
     font-size: 1rem;
     line-height: 3.2rem;
+    color: #474747;
+}
+
+.cvLink{
+    color: #474747;
+    font-size: 1.5rem;
+}
+
+.contactLinks {
+padding:10px;
+}
+
+.contactLinks a {
     color: #474747;
 }
 
@@ -71,7 +86,7 @@
         transform: translateX(0%);
     }
     to{
-        transform: translateX(-37%);
+        transform: translateX(-50%);
     }
 }
 
@@ -81,7 +96,7 @@
 
 @keyframes leftToRightText {
     from {
-        transform: translateX(-37%);
+        transform: translateX(-50%);
     }
     to{
         transform: translateX(0%);

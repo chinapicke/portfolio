@@ -118,14 +118,23 @@ const About = () => {
         download="China_Pickering_CV"
         target="_blank"
         rel="noreferrer"
-        >CV.</Link>
+        className='cvLink'
+        >CV</Link>
 
       </div>
 
       <div className='middleSectionItem pt-5'>
       <h2 className='aboutSubheadings'>/05 CONTACT</h2>
         <h3>Social.</h3>
+        <div className='contactLinks'>
+          <Link>LinkedIn</Link>
+          <span className='px-2'>/</span>
+          <Link>Github</Link>
+        </div>
         <h3>Email.</h3>
+        <div className='contactLinks'>
+        <Link>chinapickering97@gmail.com</Link>
+        </div>
       </div>
     </motion.div>
   )
