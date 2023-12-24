@@ -45,6 +45,49 @@
     outline-offset: 4px;
 }
 
+.banner{
+    /* height:20vh; */
+    background-color: #121212;
+    white-space: nowrap;
+    padding:1.5 3em;
+}
+
+.banner div{
+    display: flex;
+    gap: 4em
+}
+
+.banner p{
+    font-size: 2em;
+    color: white;
+}
+
+.rightToLeftText{
+    animation: rightToLeftText 10s infinite linear;
+}
+
+@keyframes rightToLeftText {
+    from {
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-37%);
+    }
+}
+
+.leftToRightText{
+    animation: leftToRightText 10s infinite linear;
+}
+
+@keyframes leftToRightText {
+    from {
+        transform: translateX(-37%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
 .frontButton{
         display: block;
         padding: 12px 42px;
@@ -77,11 +120,6 @@
     flex-direction: row;
 }
 
-/* .profilePhotoDiv{
-    position:relative;
-    top: -120px;
-    left: 145px;
-} */
 
 .profilePicture{
     width:50vh; 
@@ -89,6 +127,10 @@
 }
 .aboutMainHeading{
     font-size: 10vh;
+}
+
+.aboutSubheadings{
+    font-size: 14px;
 }
 
 .aboutH2{

@@ -15,6 +15,7 @@ import baliMountain from '../Assets/Images/baliMountain.png'
 import Bali from '../Assets/Images/bali.JPG'
 import CV from '../Assets/CV.pdf'
 import { Link } from 'react-router-dom'
+import MovingText from 'react-moving-text'
 // import { useState } from 'react'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faRotateRight } from '@fortawesome/free-solid-svg-icons'
@@ -51,7 +52,7 @@ const About = () => {
 
       <div className='middleSectionAboutPg'>
       <div className='middleSectionItem'>
-        <h2>/01 STORY</h2>
+        <h2 className='aboutSubheadings'>/01 STORY</h2>
         <h3>A little about me.</h3>
         </div>
         <div className='middleSectionItem' id='aboutText'>
@@ -61,8 +62,17 @@ const About = () => {
           <p> Despite travelling in Asia and the time difference, I completed a 16-week Bootcamp in the UK and refined my skills to help further my understanding of HTML, CSS, Javascript, React and Node.js.
           </p>
       </div>
-      <div className='banner bg-black h-24'>
-
+      <div className='banner bg-black'>
+        <div className='rightToLeftText'>
+          <p>FrontEnd Developer</p>
+          <p>User Experience</p>
+          <p>FrontEnd Developer</p>
+        </div>
+        <div className='leftToRightText '>
+          <p>Responsive Design</p>
+          <p>Test-Driven Development</p>
+          <p>User Research</p>
+        </div>
       </div>
       <div className='middleSectionItem pt-5'>
           <p>After my bootcamp, I continued to travelled until I returned back to the UK, where I completed a 12-week internship at a healthtech company.
@@ -72,21 +82,18 @@ const About = () => {
         </div>
       </div>
 
-      <div className='aboutMiddleBanner'>
-      </div>
-
       <div id='waterfallImgDiv' className='middleSectionItem'>
         <img src={Bali} alt='Waterfall' className='waterfallAbout'></img>
       </div>
       <div id='softSkillsSection' className='middleSectionItem'>
-      <h2>/02 THE PROCESS</h2>
+      <h2 className='aboutSubheadings'>/02 THE PROCESS</h2>
         <h3>How I work.</h3>
         <p> Through my experience I'm able to work under high levels of pressure and take initative with my work. I bring strong communication and collaboration abilities, honed through working closely with cross-functional teams in healthcare settings
           Futhermore, I am confident in working indepednently and collaboratively, whilst being able to problem-solve through any challenges I face.</p>
       </div>
 
       <div className='middleSectionItem pt-5'>
-      <h2>/03 SKILLS</h2>
+      <h2 className='aboutSubheadings'>/03 SKILLS</h2>
         <h3>What I use.</h3>
       <div className='skillsDiv'>
         <div className='skillsList'>
@@ -105,7 +112,7 @@ const About = () => {
       </div>
 
       <div className='middleSectionItem pt-5'>
-      <h2>/04 MORE INFO</h2>
+      <h2 className='aboutSubheadings'>/04 MORE INFO</h2>
         <h3>Find out more about me.</h3>
         <Link to={CV}
         download="China_Pickering_CV"
@@ -116,7 +123,7 @@ const About = () => {
       </div>
 
       <div className='middleSectionItem pt-5'>
-      <h2>/05 CONTACT</h2>
+      <h2 className='aboutSubheadings'>/05 CONTACT</h2>
         <h3>Social.</h3>
         <h3>Email.</h3>
       </div>
