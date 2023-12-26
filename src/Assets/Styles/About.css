@@ -2,10 +2,9 @@
     /* padding:40% 0% 0% 5%; */
     padding-top: 25%;
     color: #474747;
-    /* margin-right: 20px; */
 }
 
-skillsDiv {
+.skillsDiv {
     display: flex;
     justify-content: space-around;
 }

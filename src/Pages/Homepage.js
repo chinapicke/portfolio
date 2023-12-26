@@ -53,7 +53,7 @@ const Homepage = () => {
 
             </div>
             <section className='homepageWork'>
-                <div className='text-black bg-white py-5 px-3'>
+                <div className='text-black py-5 px-3'>
                     <h1>My Work.</h1>
                     <h2 >These are a selection of my work.</h2>
                 </div>

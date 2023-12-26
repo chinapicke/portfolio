@@ -1,5 +1,5 @@
 .homepageContainer {
-    /* background-color: black; */
+
     height:100%;
     width: 100%;
 }
@@ -7,8 +7,6 @@
 
 .topHomepage{
     padding:90% 5% 10%;
-    /* height:950px; */
-    /* background-color: #A3A398; */
     background-color: #121212;
 }
 
@@ -63,6 +61,11 @@
     border-color: white;
     height: 1px;
     width: 10px
+}
+
+.homepageWork{
+    background-color: white;
+
 }
 
 .contactInnerLinks {
