@@ -1,9 +1,8 @@
-// import { motion } from "framer-motion"
 import '../Assets/Styles/Work.css'
 import ReactCards from "../Components/ReactCards";
 import VanillaCards from '../Components/VanillaCards'
 import { useNavigate } from 'react-router-dom';
-
+import { HiArrowNarrowRight } from "react-icons/hi";
 
 
 const WorkHomepage = () => {  
@@ -22,8 +21,9 @@ const navigate = useNavigate()
     <div>
       <ReactCards />
       <VanillaCards />
-      <div> 
+      <div className='py-5 px-3 flex flex-row items-center'> 
         <button onClick={()=>navigate('/work')}>view all projects</button>
+        <HiArrowNarrowRight className='text-black rightArrow'/>
       </div>
     </div>
     // <motion.div

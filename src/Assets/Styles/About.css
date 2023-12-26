@@ -202,7 +202,7 @@ padding:10px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr ;
     }
-    .profilePicture {
+    /* .profilePicture {
         width: 200px;
         border-radius: 50%;
         position: absolute;
@@ -211,18 +211,15 @@ padding:10px;
         position: relative;
     top: -120px;
     left: 53vw;
-    }
+    } */
 
-    .personalInfo {
-        padding-bottom: 10px;
-        width: 60vw;
-    }
 
     .aboutContainer{
-        padding:20% 0% 0% 5%;
         color: black;
         margin-right: auto;
     }
+
+
     
 
 
@@ -235,7 +232,8 @@ padding:10px;
         grid-template-columns: 1fr 1fr;
     }
     .aboutContainer{
-        padding:15% 0% 0% 5%;
+        /* padding:15% 0% 0% 5%; */
+        padding-top: 15%;
         color: black;
         margin-right: auto;
     }

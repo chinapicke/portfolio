@@ -2,7 +2,7 @@ import '../Assets/Styles/Work.css'
 import { Link } from 'react-router-dom'
 import { FaGithub } from "react-icons/fa6";
 
-const OneProjectCardFullScreenJS = ({project}) => {
+const OneProjectCardFullScreenJS = ({ project }) => {
 
     return (
         <div className='fullScreenProjectCardJS'>
@@ -10,25 +10,23 @@ const OneProjectCardFullScreenJS = ({project}) => {
                 <img className='appImageFullscreen' src={project.image} alt='App preview' />
             </div>
             <div className="projectText">
-                <h1 className="text-red-500">{project.projectname}</h1>
-                <h2>{project.quickDescription}</h2>
+                <h1 className="projectName">{project.projectname}</h1>
+                <h2 className='projectShortDescription'>{project.quickDescription}</h2>
                 <p>{project.description}</p>
-                {/* <p>{project.deployedURL}</p>
-                <p>{project.githubUrl}</p> */}
-                <div className='flex flex-row'>
-                    <div className='pl-1'>
+                <div
+                    className="linksGrid grid grid-cols-2 "           >
+                    <div>
                         <Link to={project.deployedURL}>
-                            view project
+                            <button className="workLinks">view project</button>
                         </Link>
-                        <Link to={project.githubUrl}>
-                    <FaGithub />
-                    </Link>
-                <span className='circleShadow'></span>
+                        <span className='circleShadow' />
                     </div>
-                    
+                    <div>
+                        <Link to={project.githubUrl}>
+                            <FaGithub className="workLinks" />
+                        </Link>
+                    </div>
                 </div>
-                
-
             </div>
         </div>
     )

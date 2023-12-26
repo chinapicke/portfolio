@@ -5,13 +5,13 @@
 
 .projectName{
   color:black;
+  padding-bottom:10px
 }
 
 .cardText{
   padding: 1rem 7% !important;
   height:200px;
   color:rgb(113, 113, 113)
-  /* word-wrap: break-word; */
 }
 
 .fullScreenProjectCard{
@@ -28,11 +28,9 @@
   margin-bottom: 10rem;
 }
 
-.fullScreenProjectCardJS:nth-child(2n){ /* or: :nth-child(odd) */
+.fullScreenProjectCardJS:nth-child(2n){ 
   flex-direction: row-reverse;
-
 }
-
 
 
 .appImageFullscreen{
@@ -40,9 +38,7 @@
   border-radius: 6px;
   width:500px;
   height: auto;
-/* margin:20px;
-width:400px;
-/* height: 300px; */
+
 }
 
 .projectText{
@@ -57,32 +53,26 @@ width:400px;
     letter-spacing: 2px;
 }
 
-/* .circleShadow{ */
-  /* background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBhsKJTl1rHmdAAADgElEQVRo3sWZXUiTURjH/8/ZlpO0RCy6CCIsrdQ+XF0EZRjMLto7qWgWBsEi6QMqkkiKyKALoU+EJC9mIlSoUOTWlwbmR1GgqySxSQVdFBRSTkNbbjtdqHNTtzZ93/f8Lt8d3v9/5znnvM/zHEKM1Gni1lEmpfF0SkYi5gEYwAB+opdceD/01uKL7X0U/dCHi/wWGJGDeREGudGKRn99/ndZDZSy7B1kRR60Ub7Vi6ewdT4o9ctgoEP3rZBKkI7Y6UFZwp1c76wMPMzxVyADM6eXjpqezdDA/SRtOfbFskqmhaNGf9zojtmAw8BrkQp5+ML3mF9N/xMLI1/EX8omDyyh5w5rDAYcp3kl5kBO4ritoSzKEDRcoxNQhqtS8eRHmskP7OepBEqxca/3blvEGXAU8UooCecHzbawBho2ULvMsZ/KCM8J3hEUsu+dWArl+aQ3TJwLQbtAW66KPJDquT7NDDg285ZZn3rRn45bpechM9Chw03V5AFCebM2xMC3Qr4KapL1uyDIQCljp6A2Z0tZwED2DpX/PwCsNJgDBsgKEVjHdsG9hbqvUSdbcuL1L87/zgDdHiHygJZ2jYbACEGQEaA6TXwfkgQ56B9OYXHrhMkDSfFrGGVCIDyDUbpIAyydYbnQGUhjSBFpACkMiUJnIJEhQaQBSmQQDMNvoSEYZBgUGoJBhj6hEehj6BVqwMXIJTQELob3Ig34utnQW/QL0+/3dDGLD23CDDRbfAygJmEroAlgwN9ajAjRH+H1AAN2/kCjEAOPpb7x0swm5BiuChQmnQ/Qrbp+j9M+URv66ZLqBi6OdpLHPsdzb6t8IL0brg0pz3O9OAyuXvjZsfF7hUBCIrWjRjUDt7a3TiQkAfTH8VkV+Y/6k8EZUQCjmyzwKC7vQUFw7zwkJzR10hGFVwLnhyRnaE4YgqmKn1PUwBlz9aTvwdQx9is4qdDH57Lp1NSseApSMZUoEAiOC6ZpWmFheoMNB+gG4mSU/8MPT578iAYAezZqsUwm+S+sYPvrcIVJGCSnfj1VyxAKjirN6nDy/722s29CBbJmId/lP5L/InJpFhGpvXMtzHgzI/Fu7E8wRJaP+urWkA8rtkEXbbKFJ9zmtMtydTvBowXe3SyPb4nY1PqFFmrk9VLUBV/MLfo6TfwanoEVlIZkzB+7vnfjJ7nwwdft6Yr1+v4fdKr7t0V+3lYAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDYtMjdUMTA6Mzc6NTcrMDA6MDDqiwT3AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTA2LTI3VDEwOjM3OjU3KzAwOjAwm9a8SwAAAABJRU5ErkJggg==);
-  background-repeat: no-repeat; */
-  /* background-color: rgba(0, 0, 0, 0.21);
-  border-radius:50% ;
+ .circleShadow{ 
+  background-color: rgba(0, 0, 0, 0.21);
+  border-radius:50%;
   background-size: 22px;
   padding-left:10px;
   padding-right:6px;
   z-index: 1;
   position:relative;
-  right:95px; */
-  /* padding-bottom: 2px;
-  padding-left: 15px; */
-/* } */
+  right:90px; 
+ } 
 
 .largeLogo{
   position: fixed;
 }
-.fullScreenProjectCard:nth-child(2n+1){ /* or: :nth-child(odd) */
+.fullScreenProjectCard:nth-child(2n+1){
   flex-direction: row-reverse;
-
 }
 
 .workContainer{
-  /* margin-top:20vh; */
-  /* margin-left:20p */
+
   display: grid;
     padding:15% 0% 0% 5%;
     grid-template-columns: 10% 90%;
@@ -92,59 +82,27 @@ width:400px;
   padding:0% 0% 10%
 }
 
+.linksGrid{
+  align-self: center;
+  justify-items: center;
+}
 
+.rightArrow{
+  font-size: 30px;
+  margin-left: 10px;
+}
 
-/* .cardText {
-  padding: 1rem 7% !important;
-  word-wrap: break-word;
-  height: 200px;
-} */
+.projectShortDescription{
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+}
 
-
-/* .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    border-radius: .25rem;
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
-    background-color: white;
-    transform-style: preserve-3d;
-    margin: 3rem;
-    transition: 150ms;
-    height:400px;
-    width:auto;
-    cursor: pointer;
-    transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
-    transition: all 3s;
-  } */
-  
-  /* .card:hover {
-    --translate-y: -2px;
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
-  }
-  
-  .card.flip {
-    --rotate-y: 180deg;
-  }
-  
-  .card .front {
-    left: 0;
-  }
-  
-  .card .front,
-  .card .back {
-    position: absolute;
-    padding: 2rem 1rem 2rem 1rem;
-    backface-visibility: hidden;
-  }
-  
-  .card .back {
-    transform: rotateY(180deg);
-  } */
 
   .workLinks{
     color: black;
+    font-size: 15px;
   }
   @media screen and (min-width:768px){
     .cardText {
