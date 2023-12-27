@@ -116,7 +116,7 @@ svg.svg-inline--fa.fa-x.x {
 }
 
 .quickLinksDiv{
-    padding: 10% 15%;
+    padding: 5% 15%;
     background-color: white;
 }
 
@@ -146,13 +146,17 @@ svg.svg-inline--fa.fa-x.x {
 }
 
 @media screen and (min-width:1024px){
-    .navbarList{
+    .navbarList {
         margin-top: 0px;
         margin-bottom: 0px;
-        background-color: white;
+        background-color: transparent;
         /* background-color: white; */
         margin-left: 20px;
+        display: flex;
+        justify-content: flex-end;
     }
+    
+    
 
     .navbarList li p{
         color: #121212;
@@ -162,18 +166,18 @@ svg.svg-inline--fa.fa-x.x {
        font-size: 30px;
        display: flex;
     }
-    .navbarLayout{
+    /* .navbarLayout{
         display: grid;
         grid-template-columns: 85% 15%;
-    }
+    } */
     .navbarBars{
         color:black
     }
-
+/* 
     .navbarFullContainer{
         display: grid;
         grid-template-columns: 85% 15% ;
-    }
+    } */
     
     .x{
         color: #121212;
