@@ -1,18 +1,15 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import Logo from '../Assets/Images/logo.png';
 import '../Assets/Styles/Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
-// import usePortfolioContextHooks from '../CustomHook/usePortfolioContextHooks';
 
 
 
 const Navbar = () => {
 
   const [showNav, setShowNav] = useState(false);
-
-
 
   return (
     <div className='navbarContainer'>
@@ -24,8 +21,9 @@ const Navbar = () => {
           <li>
             {/* <h1>MENU</h1> */}
             {!showNav ?
-              <div className='flex flex-row'>
+              <div className='flex flex-row onClick={() => setShowNav(!showNav)} '>
                 <p>MENU</p>
+              
                 <FontAwesomeIcon icon={faBars} className='navbarBars'
                   onClick={() => setShowNav(!showNav)} />
               </div> :
@@ -43,10 +41,11 @@ const Navbar = () => {
         {showNav ?
           <div className='navbarOptions largeNavIcons flex flex-col animatable justify-center items-center'>
             {!showNav ?
-              <div className='flex flex-row'>
+              <div className='flex flex-row' onClick={() => setShowNav(!showNav)} >
                 <p>MENU</p>
                 <FontAwesomeIcon icon={faBars} className='navbarBars'
-                  onClick={() => setShowNav(!showNav)} />
+                  />
+
               </div> :
               <div className='flex flex-row hidden'>
                 <p>CLOSE</p>
@@ -65,7 +64,6 @@ const Navbar = () => {
               Contact
             </NavLink>
           </div> : null}
-
       </div>
     </div>
   )

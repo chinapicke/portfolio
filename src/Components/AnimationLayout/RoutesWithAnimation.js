@@ -14,7 +14,6 @@ import CodeQuiz from '../ProjectsPages/CodeQuiz';
 
 const RoutesWithAnimation = () => {
 
-  // const {setShowNav}= SavedHook()
   const location = useLocation();
   console.log(location)
 
@@ -25,9 +24,9 @@ const RoutesWithAnimation = () => {
         <Route path="/about" element={<About />} />
         <Route path="/work" element={<Work />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/brokeButcultured" element={<BrokeButCultured />} />
+        {/* <Route path="/brokeButcultured" element={<BrokeButCultured />} />
         <Route path="/weatherApp" element={<WeatherApp />} />
-        <Route path="/codeQuiz" element={<CodeQuiz />} />
+        <Route path="/codeQuiz" element={<CodeQuiz />} /> */}
       </Route>
     </Routes>
   )

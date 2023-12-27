@@ -5,7 +5,7 @@ import '../Assets/Styles/Homepage.css'
 import { NavLink } from "react-router-dom";
 import Logo from '../Assets/Images/logo.png';
 import WorkHomepage from './WorkHomepage'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation} from 'react-router-dom';
 
 
 
@@ -19,6 +19,8 @@ const Homepage = () => {
     };
 
     const navigate = useNavigate()
+
+
 
 
 

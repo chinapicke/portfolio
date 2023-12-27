@@ -36,17 +36,19 @@
 .appImageFullscreen{
   object-fit: cover;
   border-radius: 6px;
-  width:500px;
+  max-width: 350px;
   height: auto;
-
 }
 
-.projectText{
+.projectText {
   padding-left: 50px;
-  color:rgb(113, 113, 113)
-
+  padding-right: 50px;
+  color: rgb(113, 113, 113);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
+ 
 .projectText h2{
   text-transform: uppercase;
     font-size: 14px;
@@ -104,6 +106,9 @@
     color: black;
     font-size: 15px;
   }
+
+  
+
   @media screen and (min-width:768px){
     .cardText {
       height: auto;
@@ -112,4 +117,14 @@
   .appImage{
     border-radius: 6px;
   }
+  }
+
+  @media screen and (min-width:1024px) {
+    .appImageFullscreen{
+      object-fit: cover;
+      border-radius: 6px;
+      max-width: 500px;
+      height: auto;
+    }
+    
   }

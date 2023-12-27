@@ -116,7 +116,7 @@ svg.svg-inline--fa.fa-x.x {
 }
 
 .quickLinksDiv{
-    padding: 5% 15%;
+    padding: 10% 15%;
     background-color: white;
 }
 
@@ -125,7 +125,10 @@ svg.svg-inline--fa.fa-x.x {
 }
 
 
-  
+.navHome{
+    color:#af7986;
+  }
+
 
 @media screen and (min-width:700px) {
 
@@ -146,17 +149,17 @@ svg.svg-inline--fa.fa-x.x {
 }
 
 @media screen and (min-width:1024px){
-    .navbarList {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        background-color: transparent;
-        /* background-color: white; */
-        margin-left: 20px;
-        display: flex;
-        justify-content: flex-end;
-    }
-    
-    
+ .navbarList {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: transparent;
+    /* background-color: white; */
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
 
     .navbarList li p{
         color: #121212;

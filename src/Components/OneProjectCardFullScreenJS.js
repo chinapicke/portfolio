@@ -9,7 +9,7 @@ const OneProjectCardFullScreenJS = ({ project }) => {
             <div className="projectImage" >
                 <img className='appImageFullscreen' src={project.image} alt='App preview' />
             </div>
-            <div className="projectText">
+            <div className="projectText" id={project.projectname}>
                 <h1 className="projectName">{project.projectname}</h1>
                 <h2 className='projectShortDescription'>{project.quickDescription}</h2>
                 <p>{project.description}</p>

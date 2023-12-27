@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faPaperPlane, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const Layout = () => {
   // ... perhaps some authentication logic to protect routes?
@@ -58,7 +58,8 @@ const Layout = () => {
   ]
 
   const navigate = useNavigate()
-
+  const location = useLocation()
+  console.log(location.pathname)
 
   return (
     <>
@@ -100,10 +101,10 @@ const Layout = () => {
                 <li>
                   {/* <h1>MENU</h1> */}
                   {!showNav ?
-                    <div className='flex flex-row'>
-                      <p>MENU</p>
-                      <FontAwesomeIcon icon={faBars} className='navbarBars'
-                        onClick={() => setShowNav(!showNav)} />
+                    <div className='flex flex-row' >
+                      <p className={location.pathname ==='/'?'navHome':'navbarBars'}>MENU</p>
+                      <FontAwesomeIcon icon={faBars} className={location.pathname ==='/'?'navHome':'navbarBars'}
+                       onClick={() => setShowNav(!showNav)}/>
                     </div> :
                     <div className='flex flex-row closeFullScreen hidden'>
                       <p>CLOSE</p>
