@@ -1,11 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import '../Assets/Styles/Homepage.css'
-// import { Link } from 'react-router-dom'
-import { NavLink } from "react-router-dom";
-import Logo from '../Assets/Images/logo.png';
 import WorkHomepage from './WorkHomepage'
-import { useNavigate, useLocation} from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 
 
 
