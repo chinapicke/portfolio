@@ -196,6 +196,28 @@ padding:10px;
     font-size: 18px;
 }
 
+.aboutSubheadingsH3{
+    font-size: 1.3em;
+}
+
+.navbarFullScreenOptions{
+    color:#121212;
+    font-size: 1.3em;
+}
+
+.sideTitleLabelAbout h1 {
+    font-size: 12px;
+    writing-mode: vertical-lr;
+    text-orientation: sideways-right;
+    rotate: 180deg;
+    position: fixed;
+    height: 10vh;
+    bottom: 50vh;
+    left: 4vw;
+    display: flex;
+    color: white;
+    mix-blend-mode: difference;
+}
 
 @media screen and (min-width:350px) {
     .profilePhotoDiv{

@@ -48,25 +48,29 @@ const Contact = () => {
             id='name'
             name='fullName'
             placeholder="Your Name"
-            onChange={handleChange} />
+            onChange={handleChange} 
+            className=" focus:outline-none"/>
             <input 
             type='email'
             id='email'
             name='email'
             placeholder="Your Email"
-            onChange={handleChange} />
+            onChange={handleChange} 
+            className=" focus:outline-none"/>
             <input 
             type='text'
             id='subject'
             name='subject'
             placeholder="Subject"
-            onChange={handleChange} />
+            onChange={handleChange} 
+            className=" focus:outline-none"/>
             <input 
             type='text'
             id='message'
             name='message'
             placeholder="Message"
-            onChange={handleChange} />
+            onChange={handleChange} 
+            className=" focus:outline-none"/>
             <button className='submitBtn' onClick={onSubmit}>Submit</button>
           </form>
           </div>

@@ -59,17 +59,20 @@ const Layout = () => {
 
   const navigate = useNavigate()
   const location = useLocation()
-  console.log(location.pathname)
 
   return (
     <>
+       <NavLink to='/'>
       <div className='fullscreenTopBar hidden lg:flex justify-between px-3'>
-          <img src={Logo} alt='page logo' className='logo largeLogo mt-2' onClick={()=>navigate('/')}/>
+     
+          <img src={Logo} alt='page logo' className='logo largeLogo mt-2' 
+          // onClick={()=>navigate('/')}
+
+          />
+
       </div>
-      {/* <div className='navbarLayout '>
-        <Outlet />
-        <Navbar />
-      </div> */}
+      </NavLink>
+
       <div className='navbarLayoutFull'>
         <div className='navbarFull'>
           {showNav ?
@@ -101,7 +104,7 @@ const Layout = () => {
                 <li>
                   {/* <h1>MENU</h1> */}
                   {!showNav ?
-                    <div className='flex flex-row' >
+                    <div className='flex flex-row ' >
                       <p className={location.pathname ==='/'?'navHome':'navbarBars'}>MENU</p>
                       <FontAwesomeIcon icon={faBars} className={location.pathname ==='/'?'navHome':'navbarBars'}
                        onClick={() => setShowNav(!showNav)}/>

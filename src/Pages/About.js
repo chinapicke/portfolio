@@ -41,6 +41,9 @@ const About = () => {
       //   animate="final"
       {...AnimationSettings}
     >
+      <div className="sideTitleLabelAbout">
+      <h1>ABOUT</h1>
+      </div>
       <div className='flex flex-col-reverse mb-5 topAbout'>
         <div className='profilePhotoDiv flex justify-center'>
           <img src={baliMountain} alt='ProfilePicture' className='profilePicture' />
@@ -71,10 +74,10 @@ const About = () => {
         <div id='softSkillsSection' className='middleSectionItem sectionGrid'>
         <div>
         <h2 className='aboutSubheadings'>/01 STORY</h2>
-        <h3>A little about me.</h3>
+        <h3 className='aboutSubheadingsH3'>A little about me.</h3>
         </div>
         <div>
-        <p>Transitioning from mending the body to crafting digital landscapes, I bring a unique perspective to front-end development, where my background as a physiotherapist fuels my passion for
+        <p className='mt-3'>Transitioning from mending the body to crafting digital landscapes, I bring a unique perspective to front-end development, where my background as a physiotherapist fuels my passion for
               designing user interfaces which are captivating and the user' friendly.</p>
             <p >Working in healthcare during a pandemic increased my curiosity for technology and the capabilities of coding. It wasn't until I took a year travelling the world that I fully dived in coding and instantly fell in love with it.</p>
             <p> Despite travelling in Asia and the time difference, I completed a 16-week Bootcamp in the UK and refined my skills to help further my understanding of HTML, CSS, Javascript, React and Node.js.
@@ -112,10 +115,10 @@ const About = () => {
       <div id='softSkillsSection' className='middleSectionItem sectionGrid'>
         <div>
         <h2 className='aboutSubheadings'>/02 THE PROCESS</h2>
-        <h3>How I work.</h3>
+        <h3 className='aboutSubheadingsH3'>How I work.</h3>
         </div>
         <div>
-        <p> Through my experience I'm able to work under high levels of pressure and take initative with my work. I bring strong communication and collaboration abilities, honed through working closely with cross-functional teams in healthcare settings
+        <p className='mt-3'> Through my experience I'm able to work under high levels of pressure and take initative with my work. I bring strong communication and collaboration abilities, honed through working closely with cross-functional teams in healthcare settings
           Futhermore, I am confident in working indepednently and collaboratively, whilst being able to problem-solve through any challenges I face.</p>
           </div>
       </div>
@@ -123,7 +126,7 @@ const About = () => {
       <div className='middleSectionItem pt-5 sectionGrid'>
         <div>
         <h2 className='aboutSubheadings'>/03 SKILLS</h2>
-        <h3>What I use.</h3>
+        <h3 className='aboutSubheadingsH3'>What I use.</h3>
         </div>
         <div className='skillsDiv'>
           <div className='skillsList'>
@@ -144,9 +147,9 @@ const About = () => {
       <div id='softSkillsSection' className='middleSectionItem sectionGrid'>
         <div>
         <h2 className='aboutSubheadings'>/04 MORE INFO</h2>
-        <h3>Find out more about me.</h3>
+        <h3 className='aboutSubheadingsH3'>Find out more about me.</h3>
         </div>
-        <div>
+        <div className='mt-8'>
         <h3 className='softSkillH3'>Past Experience.</h3>
         <div className='contactLinks'>
           <Link to={CV}

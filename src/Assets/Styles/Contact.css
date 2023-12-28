@@ -11,7 +11,7 @@
     text-orientation: sideways-right;
     rotate:180deg;
     position: fixed;
-    height: 100vh;
+    height: 10vh;
     bottom: 50vh;
     display: flex;
     /* mix-blend-mode: difference; */
@@ -42,8 +42,9 @@ input#message{
 }
 
 .submitBtn{
-
+padding-top: 20px;
 }
+
 
 
 
