@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom'
 import { FaGithub } from "react-icons/fa6";
 import '../Assets/Styles/Work.css'
+import Fade from 'react-reveal/Fade'
+
 
 const OneProjectCardFullscreen = ({ project }) => {
     return (
+        <Fade top distance='20%' duration={1500}>
         <div className='fullScreenProjectCard'>
             <div className="projectImage" >
                 <img className='appImageFullscreen' src={project.image} alt='App preview' />
@@ -31,6 +34,7 @@ const OneProjectCardFullscreen = ({ project }) => {
 
             </div>
         </div>
+        </Fade>
     )
 }
 

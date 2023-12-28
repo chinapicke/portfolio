@@ -3,6 +3,8 @@ import ReactCards from "../Components/ReactCards";
 import VanillaCards from '../Components/VanillaCards'
 import { useNavigate } from 'react-router-dom';
 import { HiArrowNarrowRight } from "react-icons/hi";
+// import Fade from 'react-reveal/Fade'
+
 
 
 const WorkHomepage = () => {  
@@ -18,14 +20,18 @@ const navigate = useNavigate()
 
 
   return (
+    // <Fade top distance='20%' duration={1500}>
     <div>
+
       <ReactCards />
       <VanillaCards />
+
       <div className='py-5 px-3 ml-10 flex flex-row items-center'> 
         <button onClick={()=>navigate('/work')}>view all projects</button>
         <HiArrowNarrowRight className='text-black rightArrow'/>
       </div>
     </div>
+    // </Fade>
     // <motion.div
     //   {...AnimationSettings}
     //   className="WorkHomepagePage">
