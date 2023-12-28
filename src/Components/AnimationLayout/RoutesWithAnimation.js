@@ -5,9 +5,9 @@ import About from '../../Pages/About';
 import Layout from '../Layout';
 import Work from '../../Pages/Work'
 import Contact from '../../Pages/Contact';
-import BrokeButCultured from '../ProjectsPages/BrokeButCultured';
-import WeatherApp from '../ProjectsPages/WeatherApp'
-import CodeQuiz from '../ProjectsPages/CodeQuiz';
+// import BrokeButCultured from '../ProjectsPages/BrokeButCultured';
+// import WeatherApp from '../ProjectsPages/WeatherApp'
+// import CodeQuiz from '../ProjectsPages/CodeQuiz';
 
 
 
