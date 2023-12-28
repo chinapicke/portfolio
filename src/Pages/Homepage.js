@@ -34,16 +34,9 @@ const Homepage = () => {
                 </div> */}
                 <div className='leftAsideText '>
                     <h1>Hi, my name is <span>China Pickering</span></h1>
-                    <h2>Frontend Developer</h2>
-                    <h3>Making the big jump from the world of healthcare to tech</h3>
-                    <div className='flex flex-row items-center'>
-                        <div className='pl-1'>
-                        <button onClick={() => navigate('/work')}>View all works</button>
+                    <h2>Frontend Developer.</h2>
+                    <h3>Making the jump from the world of healthcare to tech.</h3>
 
-                            </div>
-                        <div className='longArrow flex items-center ml-3'></div>
-
-                    </div>
                     {/* <button onClick={allProjects}>View all work</button> */}
                 </div>
                 <aside className='fullscreenMenuAside'>

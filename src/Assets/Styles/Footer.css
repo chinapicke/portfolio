@@ -1,11 +1,12 @@
-
-.footerSection{
-    background-color: black;
+.footerSection {
+    /* background-color: black; */
+    background-color: #59757D;
     height: 20vh;
-    width: 85%;
+    /* width: 85%; */
     display: flex;
     align-items: center;
     justify-content: center;
+    /* border-top-right-radius: 10px; */
 }
 
 .footerLinks{

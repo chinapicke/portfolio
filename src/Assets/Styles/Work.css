@@ -17,14 +17,14 @@
 .fullScreenProjectCard{
   display: flex;
   flex-direction: row;
-  padding: 0px 10%;
+  padding: 0px 10% 0px 5%;
   margin-bottom: 10rem;
 }
 
 .fullScreenProjectCardJS{
   display: flex;
   flex-direction: row;
-  padding: 0px 10%;
+  padding: 0px 10% 0px 5%;
   margin-bottom: 10rem;
 }
 
@@ -76,13 +76,13 @@
 
 
 .workContainer {
-  display: grid;
-  padding: 15% 2% 0% 2%;
-  grid-template-columns: 10% 90%;
+  /* display: grid; */
+  padding: 10% 2% 0% 2%;
+  /* grid-template-columns: 10% 90%; */
 }
 
 .workTitle{
-  padding:0% 0% 10%
+  padding:0% 0% 5%
 }
 
 .linksGrid {
@@ -124,9 +124,9 @@
   }
 
   .workContainer{
-    display: grid;
-      padding:15% 0% 0% 5%;
-      grid-template-columns: 10% 90%;
+    /* display: grid; */
+      padding:10% 0% 0% 5%;
+      /* grid-template-columns: 10% 90%; */
   }
   }
 

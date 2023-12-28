@@ -8,7 +8,8 @@
 .navbarList {
     padding-top: 10px;
     padding-bottom: 5px;
-    background-color: #121212;
+    background-color: #59757D;
+    /* background-color: #121212; */
     cursor: grab;
 }
 
@@ -53,6 +54,10 @@
 }
 .navbar{
     position:absolute;
+}
+
+.navBars{
+    color:black;
 }
 .navbarOptions{
     background-color: #121212;

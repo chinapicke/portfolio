@@ -38,7 +38,7 @@ const Contact = () => {
     {...AnimationSettings}>
         <div className="contactInnerContainer mt-10">
           <div className="sideTitleLabel">
-            <h1>CONTACT</h1>
+            {/* <h1>CONTACT</h1> */}
           </div>
           <div>
           <h1 className="formSubheading">Get in touch with me.</h1>

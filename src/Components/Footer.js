@@ -40,6 +40,18 @@ const Footer = () => {
 
     return (
         <div className='footerSection'>
+            <div className='quickLinks'>
+          <NavLink to='/about' className='navbarFullScreenOptions'>
+            About
+          </NavLink>
+          <NavLink to='/work' className='navbarFullScreenOptions'>
+            Work
+          </NavLink>
+          <NavLink to='/contact' className='navbarFullScreenOptions'>
+            Contact
+          </NavLink>
+
+        </div>
             <div className='footerLinks'>
                 <h1 className='footerName'>China Pickering</h1>
                 {

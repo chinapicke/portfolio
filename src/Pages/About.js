@@ -41,9 +41,9 @@ const About = () => {
       //   animate="final"
       {...AnimationSettings}
     >
-      <div className="sideTitleLabelAbout">
+      {/* <div className="sideTitleLabelAbout">
       <h1>ABOUT</h1>
-      </div>
+      </div> */}
       <div className='flex flex-col-reverse mb-5 topAbout'>
         <div className='profilePhotoDiv flex justify-center'>
           <img src={baliMountain} alt='ProfilePicture' className='profilePicture' />
@@ -57,11 +57,11 @@ const About = () => {
       <div className='middleSectionAboutPg'>
         <div id='softSkillsSection' className='middleSectionItem sectionGrid'>
         <div>
-        <h2 className='aboutSubheadings'>/01 STORY</h2>
+        <h2 className='aboutSubheadings'>/STORY</h2>
         <h3 className='aboutSubheadingsH3'>A little about me.</h3>
         </div>
         <div>
-        <p className='mt-3'>Transitioning from mending the body to crafting digital landscapes, I bring a unique perspective to front-end development, where my background as a physiotherapist fuels my passion for
+        <p className='mt-3 textAbout'>Transitioning from mending the body to crafting digital landscapes, I bring a unique perspective to front-end development, where my background as a physiotherapist fuels my passion for
               designing user interfaces which are captivating and the user' friendly.</p>
             <p >Working in healthcare during a pandemic increased my curiosity for technology and the capabilities of coding. It wasn't until I took a year travelling the world that I fully dived in coding and instantly fell in love with it.</p>
             <p> Despite travelling in Asia and the time difference, I completed a 16-week Bootcamp in the UK and refined my skills to help further my understanding of HTML, CSS, Javascript, React and Node.js.
@@ -73,7 +73,7 @@ const About = () => {
           
           </div>
       </div>
-                <div className='banner bg-black'>
+                <div className='banner'>
           <div className='rightToLeftText'>
             <p>FrontEnd Developer</p>
             <p>.</p>
@@ -98,21 +98,23 @@ const About = () => {
       </div>
       <div id='softSkillsSection' className='middleSectionItem sectionGrid'>
         <div>
-        <h2 className='aboutSubheadings'>/02 THE PROCESS</h2>
+        <h2 className='aboutSubheadings'>/THE PROCESS</h2>
         <h3 className='aboutSubheadingsH3'>How I work.</h3>
         </div>
         <div>
-        <p className='mt-3'> Through my experience I'm able to work under high levels of pressure and take initative with my work. I bring strong communication and collaboration abilities, honed through working closely with cross-functional teams in healthcare settings
+        <p className='mt-3 textAbout'> Through my experience I'm able to work under high levels of pressure and take initative with my work. I bring strong communication and collaboration abilities, honed through working closely with cross-functional teams in healthcare settings
           Futhermore, I am confident in working indepednently and collaboratively, whilst being able to problem-solve through any challenges I face.</p>
           </div>
       </div>
 
-      <div className='middleSectionItem pt-5 sectionGrid'>
+
+      <div className='lg:grid grid-cols-2'>
+      <div className='middleSectionItem pt-5 lg:pt-0'>
         <div>
-        <h2 className='aboutSubheadings'>/03 SKILLS</h2>
+        <h2 className='aboutSubheadings'>/SKILLS</h2>
         <h3 className='aboutSubheadingsH3'>What I use.</h3>
         </div>
-        <div className='skillsDiv'>
+        <div className='skillsDiv textAbout'>
           <div className='skillsList'>
             <img src={HTML} alt='HTML skill' className='skillIcon' />
             <img src={CSS} alt='CSS skill' className='skillIcon' />
@@ -128,12 +130,12 @@ const About = () => {
         </div>
       </div>
 
-      <div id='softSkillsSection' className='middleSectionItem sectionGrid'>
+      <div id='softSkillsSection' className='middleSectionItem'>
         <div>
-        <h2 className='aboutSubheadings'>/04 MORE INFO</h2>
-        <h3 className='aboutSubheadingsH3'>Find out more about me.</h3>
+        <h2 className='aboutSubheadings'>/MORE INFO</h2>
+        <h3 className='aboutSubheadingsH3'>More about me.</h3>
         </div>
-        <div className='mt-8'>
+        <div className='mt-8 textAbout'>
         <h3 className='softSkillH3'>Past Experience.</h3>
         <div className='contactLinks'>
           <Link to={CV}
@@ -155,6 +157,7 @@ const About = () => {
         </div>
 
         </div>
+      </div>
       </div>
 
       </Fade>

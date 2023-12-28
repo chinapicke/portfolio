@@ -135,7 +135,7 @@ const Layout = () => {
                   {!showNav ?
                     <div className='flex flex-row ' >
                       <p className={location.pathname === '/' ? 'navHome' : 'navbarBars'}>MENU</p>
-                      <FontAwesomeIcon icon={faBars} className={location.pathname === '/' ? 'navHome' : 'navbarBars'}
+                      <FontAwesomeIcon icon={faBars} className='navBars'
                         onClick={() => setShowNav(!showNav)} />
                     </div> :
                     <div className='flex flex-row closeFullScreen hidden'>
@@ -155,7 +155,7 @@ const Layout = () => {
       </div>
 
 
-      <section className='quickLinksDiv '>
+      {/* <section className='quickLinksDiv '>
         <h1>quick links</h1>
         <div className='quickLinks'>
           <NavLink to='/about' className='navbarFullScreenOptions'>
@@ -169,7 +169,7 @@ const Layout = () => {
           </NavLink>
 
         </div>
-      </section>
+      </section> */}
       <footer>
         <Footer />
       </footer>

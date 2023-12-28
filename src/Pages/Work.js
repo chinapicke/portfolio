@@ -6,7 +6,7 @@ const Work = () => {
   return (
     <div className="workContainer">
       <div className="sideTitleLabel">
-      <h1>WORK</h1>
+      {/* <h1>WORK</h1> */}
       </div>
       <div>
         <div className="workTitle">
