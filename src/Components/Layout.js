@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { NavLink } from "react-router-dom";
-import Logo from '../Assets/Images/logo.png';
+// import Logo from '../Assets/Images/logo.png';
+import Logo from '../Assets/Images/logomaybe.png'
 import '../Assets/Styles/Navbar.css';
 import { useState } from 'react';
 import Footer from './Footer';
