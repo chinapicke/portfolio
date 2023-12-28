@@ -73,11 +73,12 @@
   flex-direction: row-reverse;
 }
 
-.workContainer{
 
+
+.workContainer {
   display: grid;
-    padding:15% 0% 0% 5%;
-    grid-template-columns: 10% 90%;
+  padding: 15% 2% 0% 2%;
+  grid-template-columns: 10% 90%;
 }
 
 .workTitle{
@@ -116,6 +117,12 @@
 
   .appImage{
     border-radius: 6px;
+  }
+
+  .workContainer{
+    display: grid;
+      padding:15% 0% 0% 5%;
+      grid-template-columns: 10% 90%;
   }
   }
 
