@@ -35,5 +35,27 @@
         "imageFullScreen":"/Images/zavertical.png",
         "deployedURL": "https://zoomaway.netlify.app/",
         "githubUrl": "https://github.com/chinapicke/zoomaway"    
+    },
+    {
+        "id" : 4,
+        "projectname": "Broke but cultured",
+        "description": "App that helps travelers with budgeting their trips.",
+        "quickDescription":"Budget for your next holiday",
+        "image":"/Images/2.jpg",
+        "imageFullScreen":"/Images/bbcvertical.png",
+        "projectMore":"/brokeButcultured",
+        "deployedURL": "https://chinapicke.github.io/-broke-but-cultured/",
+        "githubUrl": "https://github.com/chinapicke/-broke-but-cultured.git"    
+    }, 
+    {
+        "id" : 5,
+        "projectname": "Weather App",
+        "description": "Weather app to display the current weather and 5 day forecast.",
+        "quickDescription":"Find current and 5 day weather forecast",
+        "image":"/Images/weatherLaptop.jpg",
+        "imageFullScreen":"/Images/9.jpg",
+        "projectMore":"/weatherApp",
+        "deployedURL": "https://chinapicke.github.io/Weather_Forecast-/",
+        "githubUrl": "https://github.com/chinapicke/Weather_Forecast-.git"      
     }
 ]

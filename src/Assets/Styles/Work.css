@@ -1,3 +1,7 @@
+.moreOptionsDiv{
+  display: flex;
+  justify-content: center;
+}
 
 .back h2{
   font-size: 16px;
@@ -82,7 +86,8 @@
 }
 
 .workTitle{
-  padding:0% 0% 5%
+  padding:0% 0% 5%;
+  color: #474747;
 }
 
 .linksGrid {
@@ -119,6 +124,12 @@
       height: auto;
   }
 
+  a.projectImage {
+    display: flex;
+    /* object-fit: cover; */
+    align-items: center;
+}
+
   .appImage{
     border-radius: 6px;
   }
@@ -128,6 +139,20 @@
       padding:10% 0% 0% 5%;
       /* grid-template-columns: 10% 90%; */
   }
+
+  .rightArrow{
+    font-size: 40px;
+    margin-left: 10px;
+  }
+
+  .moreProjects{
+    font-size: 20px;
+  }
+
+  /* .moreOptionsDiv{
+    display: flex;
+    justify-content: center;
+  } */
   }
 
   @media screen and (min-width:1024px) {

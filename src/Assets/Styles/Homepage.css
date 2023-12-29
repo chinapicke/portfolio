@@ -4,6 +4,18 @@
     width: 100%;
 }
 
+.headerBox{
+    width: 60px;
+    height: 150px;
+    position: absolute;
+    top: 15px;
+    left: 17%;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    justify-content: space-between;
+}
+
 
 .topHomepage{
     padding:90% 5% 10%;
@@ -13,6 +25,11 @@
 
 .contactAddress {
     font-size: 10px;
+}
+
+.homepageWork h1, .homepageWork h2{
+    color: #474747;
+
 }
 
 .contactBanner {
@@ -198,9 +215,6 @@ svg {
         font-size: 20px;
     }
 
-    .fullscreenMenuAside{
-        background-color: red;
-    }
 
     .topHomepage{
         padding:25% 5% 5%;

@@ -15,6 +15,11 @@
     justify-items: center;
 }
 
+
+.navbarBars{
+    color:#FAF9F6;
+
+}
 .skillIcon{
     width: 50px;
     height:50px; 
@@ -50,6 +55,8 @@ padding:10px;
 
 .middleSectionItem{
     padding: 0px 8% 3% 8%;
+    color: #474747;
+
 }
 
 #static-CVBtn{
@@ -128,6 +135,12 @@ padding:10px;
     margin-left: 10px;
 }
 
+.textAbout{
+    font-size: 1rem;
+    line-height: 3.2rem;
+    color: #474747;
+}
+
 .CVBtn{
     /* background-color: white; */
     color:black;
@@ -169,6 +182,8 @@ padding:10px;
     margin: 0px;
     padding-right: 40px;
     padding-left: 40px;
+    color: #474747;
+
 }
 
 .aboutImgDiv{
@@ -222,6 +237,8 @@ padding:10px;
     color: white;
     mix-blend-mode: difference;
 } 
+
+
 
 @media screen and (min-width:350px) {
     .profilePhotoDiv{
@@ -305,7 +322,7 @@ padding:10px;
     .skillsList {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 3rem;
+        gap: 4em;
         justify-items: center;
     }
     
@@ -334,6 +351,12 @@ padding:10px;
         to{
             transform: translateX(20%);
         }
+    }
+
+    .skillIcon {
+        width: 70px;
+        height: 70px;
+        /* margin: 10px; */
     }
 
 }
@@ -367,11 +390,23 @@ padding:10px;
         margin-right: auto;
     }
 
+    #softSkillsSection{
+        padding-top:0px;
+    margin-left: 4em;
+}
+    
+
     .skillsList {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 5rem;
+        gap: 3rem;
         justify-items: center;
+    }
+
+    .skillIcon {
+        width: 50px;
+        height: 50px;
+        /* margin: 10px; */
     }
 
     .skillsDiv{
@@ -408,7 +443,7 @@ padding:10px;
     }
 
     .textAbout{
-        margin-top: 4em !important;
+        margin-top: 1.7em !important;
     }
 
    

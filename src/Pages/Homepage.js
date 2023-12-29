@@ -1,7 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import '../Assets/Styles/Homepage.css'
-import WorkHomepage from './WorkHomepage'
+// import WorkHomepage from './WorkHomepage'
+import HomepageCards from '../Components/HomepageCards';
 import { useNavigate} from 'react-router-dom';
 
 
@@ -33,6 +34,7 @@ const Homepage = () => {
                     <ContactBanner />
                 </div> */}
                 <div className='leftAsideText '>
+                    <div className='headerBox'></div>
                     <h1>Hi, my name is <span>China Pickering</span></h1>
                     <h2>Frontend Developer.</h2>
                     <h3>Making the jump from the world of healthcare to tech.</h3>
@@ -45,11 +47,12 @@ const Homepage = () => {
 
             </div>
             <section className='homepageWork'>
-                <div className='text-black py-5 px-3 ml-5'>
+                <div className='py-5 px-3 ml-5'>
                     <h1>My Work.</h1>
-                    <h2 >These are a selection of my work.</h2>
+                    <h2>These are a selection of my work.</h2>
                 </div>
-                <WorkHomepage />
+                {/* <WorkHomepage /> */}
+                <HomepageCards />
             </section>
 
 

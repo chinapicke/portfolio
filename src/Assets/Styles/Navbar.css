@@ -73,6 +73,13 @@
     font-size: 1.3em;
 }
 
+.navbarFullScreenOptions {
+    text-decoration: none;
+    padding: 20px;
+    margin-right: 0.5rem;
+    /* font-size: 3em; */
+}
+
 .animatable {
     position: relative;
     clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
@@ -108,11 +115,11 @@
   }
 
   .navbarList li p{
-    margin-top: 8px;
+    margin-top: 13px;
     margin-right:10px;
     font-size: 12px;
     letter-spacing: 2px;
-    color: white;
+    color:#FAF9F6;
     z-index:50
   }
 
@@ -124,7 +131,12 @@
     /* background-color: black; */
     height: 100vh;
     width: 100vw;
-    z-index:2
+    z-index:2;
+    color: #474747;
+}
+
+a.navbarFullScreenOptions {
+    color: #474747;
 }
 
 svg.svg-inline--fa.fa-x.x {
@@ -159,11 +171,12 @@ svg.svg-inline--fa.fa-x.x {
     font-size: 20px;
     display: flex;
     align-items: center;
+    color:#FAF9F6;
 }
 
-  .navSVG{
-    color: black;
-  }
+.navSVG {
+    color: #474747;
+}
 
   .closeNavCurtain {
     position: absolute;
@@ -214,12 +227,12 @@ svg.svg-inline--fa.fa-x.x {
         margin-left: 15px;
     }
 
-    .navbarFullScreenOptions {
+    /* .navbarFullScreenOptions {
         text-decoration: none;
         padding:5px;
         margin-right: 3.5rem;
         font-size: 2em;
-    }
+    } */
 }
 
 @media screen and (min-width:1024px){
@@ -234,18 +247,20 @@ svg.svg-inline--fa.fa-x.x {
             justify-content: flex-end;
     }
 
-    img.logo.largeLogo.mt-2 {
+    .logo.largeLogo.mt-2 {
         /* display: none; */
         padding-top: 10px;
         margin-left: 10px;
         z-index: 1;
     }
 
-img.logo.largeLogo.mt-2:hover{
+.logo.largeLogo.mt-2:hover{
     cursor: grab;
 }
 
-
+.navbarList li p {
+    margin-top: 8px;
+}
 
     .navbarList li p{
         color: #121212;
@@ -255,24 +270,25 @@ img.logo.largeLogo.mt-2:hover{
        font-size: 30px;
        display: flex;
     }
-    /* .navbarLayout{
-        display: grid;
-        grid-template-columns: 85% 15%;
-    } */
+    
+    .contactInnerLinksRow {
+        font-size: 20px;
+    }
+
+    .footerName {
+        font-size: 20px;
+    }
     .navbarBars{
         color:black
     }
-/* 
-    .navbarFullContainer{
-        display: grid;
-        grid-template-columns: 85% 15% ;
-    } */
-    
+
+    .navbarFullScreenOptions {
+        font-size: 1.2em;
+    }
+
     .x{
         color: #121212;
     }
-
-
 
 
     .navbarOptionsFull.largeNavIconsFull.flex.flex-col.animatable.justify-center.items-center {
@@ -288,5 +304,7 @@ img.logo.largeLogo.mt-2:hover{
     .closeBackground{
         color:white !important;
     }
+
+   
 
 }

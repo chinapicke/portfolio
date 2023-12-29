@@ -26,8 +26,8 @@ const navigate = useNavigate()
       <ReactCards />
       <VanillaCards />
 
-      <div className='py-5 px-3 ml-10 flex flex-row items-center'> 
-        <button onClick={()=>navigate('/work')}>view all projects</button>
+      <div className='pb-5 px-3 ml-10 flex flex-row items-center moreOptionsDiv'> 
+        <button className='moreProjects' onClick={()=>navigate('/work')}>view all projects</button>
         <HiArrowNarrowRight className='text-black rightArrow'/>
       </div>
     </div>
