@@ -34,7 +34,7 @@ const Homepage = () => {
                     <ContactBanner />
                 </div> */}
                 <div className='leftAsideText '>
-                    <div className='headerBox'></div>
+                    {/* <div className='headerBox'></div> */}
                     <h1>Hi, my name is <span>China Pickering</span></h1>
                     <h2>Frontend Developer.</h2>
                     <h3>Making the jump from the world of healthcare to tech.</h3>

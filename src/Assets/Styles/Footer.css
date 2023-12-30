@@ -10,6 +10,57 @@
     /* border-top-right-radius: 10px; */
 }
 
+.outerFooter{
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+
+/* .topOfPage{
+    transform: rotate(-90deg);
+} */
+
+/* .link__decor>span.line {
+    width: 40px;
+    height: 1px;
+    position: relative;
+    background: #000;
+    margin-left: 10px;
+} */
+
+.decorTop{
+    transform: rotate(-90deg);
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.line{
+    width: 40px;
+    height: 1px;
+    position: relative;
+    background: #000;
+    /* margin-left: 50px;
+    top: 20px; */
+}
+
+.topOfPage{
+    margin-top: 10px;
+}
+
+.line:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    width: 8px;
+    height: 1px;
+    transform-origin: center right;
+    transform: rotate(35deg);
+}
+
 .footerLinks{
     display: flex;
     flex-direction: row;

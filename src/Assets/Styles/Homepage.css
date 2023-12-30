@@ -17,8 +17,9 @@
 }
 
 
-.topHomepage{
-    padding:90% 5% 10%;
+.topHomepage {
+    padding: 80% 5% 10%;
+    height: 100%;
     background-color: #59757D;
     /* background-color: #121212; */
 }
@@ -41,10 +42,10 @@
 
 
 .leftAsideText {
-
     width: 90%;
-    color:white;
-
+    color: white;
+    position: relative;
+    bottom: 100px;
 }
 
 .leftAsideText h2,
@@ -131,8 +132,8 @@ svg {
 
     .topHomepage{
         padding:40% 5% 10%;
-        /* height:650px; */
-        display:grid;
+        height:760px;
+        /* display:grid; */
         /* grid-template-columns: 85% 15%; */
     }
 
@@ -180,6 +181,7 @@ svg {
     }
 
     .leftAsideText {
+        position: normal;
         bottom: 0;
         margin-left: 0px;
         margin-right: 5px;
@@ -218,6 +220,8 @@ svg {
 
     .topHomepage{
         padding:25% 5% 5%;
+        width:90%;
+
         /* height:650px; */
         display:grid;
         /* grid-template-columns: 85% 15%; */
@@ -229,7 +233,7 @@ svg {
     .topHomepage{
         padding:25% 5% 5%;
         /* height:650px; */
-        display:grid;
+        /* display:grid; */
         /* grid-template-columns: 85% 15%; */
     }
 }

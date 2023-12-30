@@ -28,8 +28,9 @@
     {
         "id" : 3,
         "projectname": "ZoomAway",
-        "description": "Responsive car rental app at affordable rates.",
+        "description": "Responsive car rental application that provides user with affordable rates. Users are able to able to select their desired vechile and provided with forms to complete before being navigate to the next page.",
         "quickDescription":"Car rental",
+        "components":["React","Tailwind"],
         "image":"/Images/4.jpg",
         "imageScreenShot":"/Images/zoombig.png",
         "imageFullScreen":"/Images/zavertical.png",

@@ -37,8 +37,15 @@ const contacts2 = [
 
 const Footer = () => {
 
+        const scrollTop = () => {
+            setTimeout(() => {
+                window.scrollTo(0, 0);
+            });
+        }            
+      
 
     return (
+        <div className='outerFooter'>
         <div className='footerSection'>
             <div className='quickLinks'>
           <NavLink to='/about' className='navbarFullScreenOptions'>
@@ -81,6 +88,12 @@ const Footer = () => {
 
             </div>
 
+        </div>
+        <div className='decorTop' >
+            <div className='line'></div>
+            <p className='topOfPage' onClick={scrollTop}>TOP</p>
+            <button onClick={scrollTop}>Click scroll</button>
+        </div>
         </div>
 
     )

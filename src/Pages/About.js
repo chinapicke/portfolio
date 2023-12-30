@@ -8,7 +8,7 @@ import Bootstrap from '../Assets/Images/bootstrap.png'
 import Git from '../Assets/Images/git.png'
 import Atom from '../Assets/Images/atom.png'
 import Tailwind from '../Assets/Images/tailwind.png'
-import Figma from '../Assets/Images/figma.png'
+import Redux from '../Assets/Images/redux.png'
 import jquery2 from '../Assets/Images/jquery2.png'
 import Node2 from '../Assets/Images/node.png'
 import baliMountain from '../Assets/Images/baliMountain.png'
@@ -125,7 +125,7 @@ const About = () => {
                 <img src={Node2} alt='Node skill' className='skillIcon' />
                 <img src={Atom} alt='React skill' className='skillIcon' />
                 <img src={Tailwind} alt='Tailwind skill' className='skillIcon' />
-                <img src={Figma} id='figmaIcon' alt='Figma skill' className='skillIcon' />
+                <img src={Redux} id='reduxIcon' alt='Redux skill' className='skillIcon' />
               </div>
             </div>
           </div>

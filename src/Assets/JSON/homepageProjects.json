@@ -28,8 +28,9 @@
     {
         "id" : 3,
         "projectname": "ZoomAway",
-        "description": "Responsive car rental app at affordable rates.",
+        "description": "Responsive car rental application that provides user with affordable rates. Users are able to able to select their desired vechile and provided with forms to complete before being navigate to the next page.",
         "quickDescription":"Car rental",
+        "components":["React","Tailwind"],
         "image":"/Images/4.jpg",
         "imageScreenShot":"/Images/zoombig.png",
         "imageFullScreen":"/Images/zavertical.png",
@@ -39,8 +40,9 @@
     {
         "id" : 4,
         "projectname": "Broke but cultured",
-        "description": "App that helps travelers with budgeting their trips.",
+        "description": "Javascript application that helps travelers budget for their upcoming trips. Countries RESTful API is utlisied to show a list of countries, Currency Convertor API for users to convert to any currency and Wiki Voyage API to show information of the selected destination. Users are also able to view their previous searched destinations.",
         "quickDescription":"Budget for your next holiday",
+        "components":["Javascript","Bootstrap"],
         "image":"/Images/2.jpg",
         "imageFullScreen":"/Images/bbcvertical.png",
         "projectMore":"/brokeButcultured",
@@ -50,8 +52,9 @@
     {
         "id" : 5,
         "projectname": "Weather App",
-        "description": "Weather app to display the current weather and 5 day forecast.",
+        "description": "Weather application using Javascript. Users are able to search by city input, that uses the OpenWeather API to retrieve current weather and 5-day forecast data, and uses localStorage to store persistent data.",
         "quickDescription":"Find current and 5 day weather forecast",
+        "components":["Javascript","Bootstrap"],
         "image":"/Images/weatherLaptop.jpg",
         "imageFullScreen":"/Images/9.jpg",
         "projectMore":"/weatherApp",
