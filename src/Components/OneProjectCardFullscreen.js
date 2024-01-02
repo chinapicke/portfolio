@@ -6,7 +6,7 @@ import Fade from "react-awesome-reveal"
 
 const OneProjectCardFullscreen = ({ project }) => {
     return (
-        <Fade top distance='20%' duration={1500}>
+        // <Fade top distance='20%' duration={1500}>
         <div className='fullScreenProjectCard'>
             <Link to={project.deployedURL} className="projectImage">
                 <img className='appImageFullscreen' src={project.image} alt='App preview' />
@@ -38,7 +38,7 @@ const OneProjectCardFullscreen = ({ project }) => {
 
             </div>
         </div>
-        </Fade>
+        // </Fade>
     )
 }
 

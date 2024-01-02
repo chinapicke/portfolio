@@ -1,13 +1,13 @@
 import '../Assets/Styles/Work.css'
 import { Link } from 'react-router-dom'
 import { FaGithub } from "react-icons/fa6";
-import Fade from "react-awesome-reveal"
+// import Fade from "react-awesome-reveal"
 
 
 const OneProjectCardFullScreenJS = ({ project }) => {
 
     return (
-        <Fade top distance='20%' duration={1500}>
+        // <Fade top distance='20%' duration={1500}>
 
         <div className='fullScreenProjectCardJS'>
 
@@ -35,7 +35,7 @@ const OneProjectCardFullScreenJS = ({ project }) => {
                 </div>
             </div>
         </div>
-        </Fade>
+        // </Fade>
     )
 }
 
