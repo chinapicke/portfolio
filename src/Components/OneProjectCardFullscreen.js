@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { FaGithub } from "react-icons/fa6";
 import '../Assets/Styles/Work.css'
-import Fade from 'react-reveal/Fade'
+import Fade from "react-awesome-reveal"
 
 
 const OneProjectCardFullscreen = ({ project }) => {

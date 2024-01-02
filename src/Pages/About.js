@@ -15,7 +15,7 @@ import baliMountain from '../Assets/Images/baliMountain.png'
 import Bali from '../Assets/Images/bali.JPG'
 import CV from '../Assets/CV.pdf'
 import { Link } from 'react-router-dom'
-import Fade from 'react-reveal/Fade'
+import Fade from "react-awesome-reveal"
 // import { useState } from 'react'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faRotateRight } from '@fortawesome/free-solid-svg-icons'
