@@ -92,7 +92,6 @@ const Footer = () => {
         <div className='decorTop' >
             <div className='line'></div>
             <p className='topOfPage' onClick={scrollTop}>TOP</p>
-            <button onClick={scrollTop}>Click scroll</button>
         </div>
         </div>
 

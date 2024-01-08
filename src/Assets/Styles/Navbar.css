@@ -8,7 +8,7 @@
 .navbarList {
     padding-top: 10px;
     padding-bottom: 5px;
-    background-color: #59757D;
+    background-color: rgba(89, 117, 125, 0.7); 
     /* background-color: #121212; */
     cursor: grab;
 }
@@ -58,6 +58,7 @@
 
 .navBars{
     color:black;
+    mix-blend-mode: difference;
 }
 .navbarOptions{
     background-color: #121212;
@@ -127,7 +128,7 @@
     position: fixed;
     /* background-color: white; */
     background-color: white;
-    bottom:3px;
+    /* bottom:3px; */
     /* background-color: black; */
     height: 100vh;
     width: 100vw;

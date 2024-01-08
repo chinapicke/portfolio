@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 // import Logo from '../Assets/Images/logo.png';
 import Logo from '../Assets/Images/logomaybe.png'
 import '../Assets/Styles/Navbar.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Footer from './Footer';
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 import { useLocation } from 'react-router-dom';
@@ -47,12 +47,35 @@ const Layout = () => {
   // ... perhaps some authentication logic to protect routes?
 
   const [showNav, setShowNav] = useState(false);
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (window.scrollY > lastScrollY) { // if scroll down hide the navbar
+      setShow(true); 
+    } else { // if scroll up show the navbar
+      setShow(false);  
+    }
+
+    // remember current page location to use in the next move
+    setLastScrollY(window.scrollY); 
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', controlNavbar);
+
+    // cleanup function
+    return () => {
+       window.removeEventListener('scroll', controlNavbar);
+    };
+  }, [lastScrollY]);
+
 
   const location = useLocation()
 
   return (
     <>
-      <NavLink to='/' onClick={() => setShowNav(!showNav)}>
+      <NavLink to='/' onClick={() => setShowNav(!showNav)} className={`active ${show && 'hidden '}`}>
         <div className='fullscreenTopBar hidden lg:flex justify-between px-3'>
           <img src={Logo} alt='page logo' className='logo largeLogo mt-2' />
         </div>
@@ -125,8 +148,8 @@ const Layout = () => {
 
         <div className='navbarFullContainer'>
           <Outlet />
-          <div className='navbarContainer'>
-            <header className="header">
+          <div className={`active ${show && 'hidden '}`}>
+            <nav className="header" >
               <ul className={`navbarList flex flex-row justify-between items-center px-3 ${!showNav ? '' : 'closeBackground'}`}>
                 <NavLink className='homeNav lg:hidden' to="/">
                   <img src={Logo} alt='page logo' className='logo' />
@@ -134,7 +157,7 @@ const Layout = () => {
                 <li>
                   {/* <h1>MENU</h1> */}
                   {!showNav ?
-                    <div className='flex flex-row ' >
+                    <div className='flex flex-row mr-3' >
                       <p className={location.pathname === '/' ? 'navHome' : 'navbarBars'}>MENU</p>
                       <FontAwesomeIcon icon={faBars} className='navBars'
                         onClick={() => setShowNav(!showNav)} />
@@ -148,7 +171,7 @@ const Layout = () => {
 
                 </li>
               </ul>
-            </header>
+            </nav>
           </div>
         </div>
 

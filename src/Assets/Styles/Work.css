@@ -42,6 +42,11 @@
   border-radius: 6px;
   max-width: 350px;
   height: auto;
+  transition: all .2s ease-in-out; 
+}
+
+.appImageFullscreen:hover{
+  transform: scale(1.1); 
 }
 
 .projectText {
@@ -92,8 +97,7 @@
 
 .linksGrid {
   align-self: center;
-  justify-items: center;
-  align-items: center;
+  /* justify-items: center; */
 }
 
 .rightArrow{

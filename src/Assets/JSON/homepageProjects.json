@@ -5,7 +5,7 @@
         "id" : 1,
         "projectname": "gutenBooks",
         "description": "A responsive React application that utilises Gutendex API that pulls books from Gutenberg Project epub databas so that users can read free classical books on the go. Books are displayed using React Reader (powered by ePubJS). Users can filters their search by author, title or topic. A book can be read directly or added to a bookshelf for later. Users can also review their read books with star rating and review functionaltiy.",
-        "components":["React","MUI", "SCSS", "AWS Lambda"],
+        "components":["React","MUI", "SCSS"],
         "quickDescription":"Read free classical books on the go",
         "imageScreenShot":"/Images/guten.png",
         "image":"/Images/3.jpg",

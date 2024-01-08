@@ -17,18 +17,24 @@ const OneProjectCardFullscreen = ({ project }) => {
                 <p>{project.description}</p>
                 
                 <div
-                    className="linksGrid "           >
+                    className="linksGrid"           >
                     {/* <div>
                         <Link to={project.deployedURL}>
                             <button className="workLinks">view project</button>
                         </Link>
                         <span className='circleShadow' />
                     </div> */}
-                    <div>
-                        <p>{project.components}</p>
+                    <div className='flex flex-row'>
+                        {
+                            project.components.map((item)=>{
+                                return(
+                                    <p className='mx-2'>{item}</p>
+                                )
+                            })
+                        }
 
                     </div>
-                    <div>
+                    <div className='flex justify-center'>
                         <Link to={project.githubUrl}>
                             <FaGithub className="workLinks" />
                         </Link>

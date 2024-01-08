@@ -18,8 +18,8 @@
 
 
 .topHomepage {
-    padding: 80% 5% 10%;
-    height: 100%;
+    padding: 80% 5% 0% 5%;
+    height: 100vh;
     background-color: #59757D;
     /* background-color: #121212; */
 }
@@ -44,8 +44,9 @@
 .leftAsideText {
     width: 90%;
     color: white;
-    position: relative;
-    bottom: 100px;
+    /* position: relative;
+    bottom: 130px; */
+    margin-bottom: 20px;
 }
 
 .leftAsideText h2,
@@ -55,8 +56,9 @@
 }
 
 .leftAsideText h1 {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     margin-top: 20px;
+    font-size: 35px;
 }
 
 .linkBarSmallScreen {
@@ -131,8 +133,8 @@ svg {
 @media screen and (min-width: 768px) {
 
     .topHomepage{
-        padding:40% 5% 10%;
-        height:760px;
+        padding:40% 5% 3%;
+        /* height:760px; */
         /* display:grid; */
         /* grid-template-columns: 85% 15%; */
     }
@@ -219,7 +221,7 @@ svg {
 
 
     .topHomepage{
-        padding:25% 5% 5%;
+        padding:25% 5% 3%;
         width:90%;
 
         /* height:650px; */
@@ -231,7 +233,7 @@ svg {
 
 @media screen and (min-width:1200px){
     .topHomepage{
-        padding:25% 5% 5%;
+        padding:25% 5% 3%;
         /* height:650px; */
         /* display:grid; */
         /* grid-template-columns: 85% 15%; */
