@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import '../Assets/Styles/Homepage.css'
 // import WorkHomepage from './WorkHomepage'
 import HomepageCards from '../Components/HomepageCards';
-import { useNavigate} from 'react-router-dom';
+// import { useNavigate} from 'react-router-dom';
 
 
 
@@ -16,7 +16,7 @@ const Homepage = () => {
         exit: { opacity: 0, y: -20 }
     };
 
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
 
 
 
