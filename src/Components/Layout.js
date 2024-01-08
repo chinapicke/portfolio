@@ -44,31 +44,33 @@ const contacts2 = [
 
 
 const Layout = () => {
-  // ... perhaps some authentication logic to protect routes?
 
   const [showNav, setShowNav] = useState(false);
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  const controlNavbar = () => {
-    if (window.scrollY > lastScrollY) { // if scroll down hide the navbar
-      setShow(true); 
-    } else { // if scroll up show the navbar
-      setShow(false);  
-    }
-
-    // remember current page location to use in the next move
-    setLastScrollY(window.scrollY); 
-  };
+  // Navbar show when scrolling up  
+  
 
   useEffect(() => {
+    const controlNavbar = () => {
+      if (window.scrollY > lastScrollY) { // if scroll down hide the navbar
+        setShow(true); 
+      } else { // if scroll up show the navbar
+        setShow(false);  
+      }
+  
+      // remember current page location to use in the next move
+      setLastScrollY(window.scrollY); 
+    };
+    
     window.addEventListener('scroll', controlNavbar);
 
     // cleanup function
     return () => {
        window.removeEventListener('scroll', controlNavbar);
     };
-  }, [lastScrollY]);
+  }, [lastScrollY, react-hooks/exhaustive-deps]);
 
 
   const location = useLocation()
