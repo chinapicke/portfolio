@@ -63,14 +63,14 @@ const Layout = () => {
       // remember current page location to use in the next move
       setLastScrollY(window.scrollY); 
     };
-    
+
     window.addEventListener('scroll', controlNavbar);
 
     // cleanup function
     return () => {
        window.removeEventListener('scroll', controlNavbar);
     };
-  }, [lastScrollY, react-hooks/exhaustive-deps]);
+  }, [lastScrollY]);
 
 
   const location = useLocation()
