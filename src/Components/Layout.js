@@ -68,7 +68,7 @@ const Layout = () => {
     return () => {
        window.removeEventListener('scroll', controlNavbar);
     };
-  }, [lastScrollY]);
+  }, [lastScrollY, controlNavbar]);
 
 
   const location = useLocation()
