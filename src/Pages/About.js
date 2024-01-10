@@ -64,14 +64,14 @@ const About = () => {
             <div>
               <p className='mt-3 textAbout'>Transitioning from mending the body to crafting digital landscapes, I bring a unique perspective to front-end development, where my background as a physiotherapist fuels my passion for
                 designing user interfaces which are captivating and the user' friendly.</p>
-              <p >Working in healthcare during a pandemic increased my curiosity for technology and the capabilities of coding. It wasn't until I took a year travelling the world that I fully dived in coding and instantly fell in love with it.</p>
-              <p> Despite travelling in Asia and the time difference, I completed a 16-week Bootcamp in the UK and refined my skills to help further my understanding of HTML, CSS, Javascript, React and Node.js.
+              <p className='textAbout'>Working in healthcare during a pandemic increased my curiosity for technology and the capabilities of coding. It wasn't until I took a year travelling the world that I fully dived in coding and instantly fell in love with it.</p>
+              <p className='textAbout'> Despite travelling in Asia and the time difference, I completed a 16-week Bootcamp in the UK and refined my skills to help further my understanding of HTML, CSS, Javascript, React and Node.js.
               </p>
-              <p>After my bootcamp, I continued to travelled until I returned back to the UK, where I completed a 12-week internship at a healthtech company.
+              <p className='textAbout'>After my bootcamp, I continued to travelled until I returned back to the UK, where I completed a 12-week internship at a healthtech company.
                 I was able to leverage my healthcare background to collaborate and develop a worldwide used contracting website that monitored the effectiveness of health technologies and services.
                 Following my internship, I was able to work as a freelance front-end developer for the same healthtech company.
               </p>
-              <p>I'm truly excited to see what the future holds and eager to find my place in a collaborative team where I can continue to do what I love!</p>
+              <p className='textAbout'>I'm truly excited to see what the future holds and eager to find my place in a collaborative team where I can continue to do what I love!</p>
 
             </div>
           </div>
@@ -116,7 +116,7 @@ const About = () => {
       <Fade top distance='%' duration={1800}>
 
         <div className='lg:grid grid-cols-2'>
-          <div className='middleSectionItem mb-3 lg:ml-14 lg:mb-0'>
+          <div className='middleSectionItem mb-3 lg:ml-14 lg:mb-0 xl:ml-20'>
             <div>
               <h2 className='aboutSubheadings'>/SKILLS</h2>
               <h3 className='aboutSubheadingsH3 mb-5 lg:mb-5'>What I use.</h3>

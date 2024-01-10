@@ -1,8 +1,8 @@
 .contactInnerContainer{
     display: grid;
     /* padding:10% 0% 0% 5%; */
-    padding:20% 0% 10% 5%;
-    /* padding:20% 10% 0 15%; */
+    padding: 20% 0% 25% 5%;
+        /* padding:20% 10% 0 15%; */
     grid-template-columns: 10% 90%;
     color: #474747;
 }

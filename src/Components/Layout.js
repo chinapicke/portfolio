@@ -140,7 +140,7 @@ const Layout = () => {
 
               </div>
 
-              <div className='flex flex-row justify-center copyrightName mt-auto'>
+              <div className='flex flex-row justify-center copyrightName mt-auto mb-3'>
                 <FaRegCopyright className='copyright mt-0.5 mr-1' />
                 <h1 className='myName'>China Pickering</h1>
               </div>

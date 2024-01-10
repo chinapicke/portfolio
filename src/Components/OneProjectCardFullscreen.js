@@ -14,7 +14,7 @@ const OneProjectCardFullscreen = ({ project }) => {
             <div className="projectText"  id={project.projectname}>
             <h1 className="projectName">{project.projectname}</h1>
                 <h2 className='projectShortDescription'>{project.quickDescription}</h2>
-                <p>{project.description}</p>
+                <p className='projectDescriptionFull'>{project.description}</p>
                 
                 <div
                     className="linksGrid"           >
@@ -28,7 +28,7 @@ const OneProjectCardFullscreen = ({ project }) => {
                         {
                             project.components.map((item)=>{
                                 return(
-                                    <p className='mx-2'>{item}</p>
+                                    <p className='projectCharacteristics mx-2'>{item}</p>
                                 )
                             })
                         }

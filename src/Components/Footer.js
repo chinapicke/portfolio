@@ -48,13 +48,13 @@ const Footer = () => {
         <div className='outerFooter'>
         <div className='footerSection'>
             <div className='quickLinks'>
-          <NavLink to='/about' className='navbarFullScreenOptions'>
+          <NavLink to='/about' className='navbarFullScreenOptionsFooter'>
             About
           </NavLink>
-          <NavLink to='/work' className='navbarFullScreenOptions'>
+          <NavLink to='/work' className='navbarFullScreenOptionsFooter'>
             Work
           </NavLink>
-          <NavLink to='/contact' className='navbarFullScreenOptions'>
+          <NavLink to='/contact' className='navbarFullScreenOptionsFooter'>
             Contact
           </NavLink>
 

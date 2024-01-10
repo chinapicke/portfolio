@@ -34,7 +34,7 @@ const OneProjectCardFullScreenJS = ({ project }) => {
                         }
                     </div>
                     <div>
-                        <Link to={project.githubUrl}>
+                        <Link to={project.githubUrl} className="flex justify-center">
                             <FaGithub className="workLinks" />
                         </Link>
                     </div>
