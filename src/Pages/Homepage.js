@@ -29,7 +29,7 @@ const Homepage = () => {
             {/* <NavLink className='homeNav px-3 ' to="/">
           <img src={Logo} alt='page logo' className='logo largeLogo' />
         </NavLink> */}
-            <div className='topHomepage flex justify-center items-end'>
+            <div className='topHomepage flex justify-center items-center md:items-end'>
                 {/* <div className='homepageContactBanner'>
                     <ContactBanner />
                 </div> */}
