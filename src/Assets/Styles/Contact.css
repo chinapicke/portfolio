@@ -1,7 +1,7 @@
 .contactInnerContainer{
     display: grid;
     /* padding:10% 0% 0% 5%; */
-    padding: 20% 0% 25% 5%;
+    padding: 20% 0% 29% 5%;
         /* padding:20% 10% 0 15%; */
     grid-template-columns: 10% 90%;
     color: #474747;
@@ -66,7 +66,7 @@ padding-top: 20px;
     }
 
     .contactInnerContainer{
-        padding:10% 0% 8% 5%;
+        padding:10% 0% 12% 5%;
     }
 
     
