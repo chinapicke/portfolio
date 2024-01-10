@@ -5,6 +5,7 @@ import About from '../../Pages/About';
 import Layout from '../Layout';
 import Work from '../../Pages/Work'
 import Contact from '../../Pages/Contact';
+import { useEffect } from 'react';
 // import BrokeButCultured from '../ProjectsPages/BrokeButCultured';
 // import WeatherApp from '../ProjectsPages/WeatherApp'
 // import CodeQuiz from '../ProjectsPages/CodeQuiz';
@@ -14,8 +15,12 @@ import Contact from '../../Pages/Contact';
 
 const RoutesWithAnimation = () => {
 
+  const {pathname} = useLocation();
   const location = useLocation();
-  console.log(location)
+ 
+  useEffect(()=>{
+window.scrollTo({top:0,behaviour:"smooth"})
+  },[pathname])
 
   return (
     <Routes location={location} key={location.pathname}>

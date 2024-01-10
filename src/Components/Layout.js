@@ -46,11 +46,11 @@ const contacts2 = [
 const Layout = () => {
 
   const [showNav, setShowNav] = useState(false);
+
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   // Navbar show when scrolling up  
-  
 
   useEffect(() => {
     const controlNavbar = () => {
@@ -77,7 +77,7 @@ const Layout = () => {
 
   return (
     <>
-      <NavLink to='/' onClick={() => setShowNav(!showNav)} className={`active ${show && 'hidden '}`}>
+      <NavLink to='/' onClick={() => setShowNav(!showNav)} className={`active ${!show && 'hidden'}`}>
         <div className='fullscreenTopBar hidden lg:flex justify-between px-3'>
           <img src={Logo} alt='page logo' className='logo largeLogo mt-2' />
         </div>

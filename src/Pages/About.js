@@ -36,10 +36,10 @@ const About = () => {
   return (
     <motion.div
       className='aboutContainer'
-      // variants={routeVariants}
-      //   initial="initial"
-      //   animate="final"
-      {...AnimationSettings}
+    // variants={routeVariants}
+    //   initial="initial"
+    //   animate="final"
+    {...AnimationSettings}
     >
       {/* <div className="sideTitleLabelAbout">
       <h1>ABOUT</h1>
@@ -52,10 +52,11 @@ const About = () => {
           <h1 className='aboutH3 text-center mb-5'>Hi, I'm China Pickering. A dedicated front-end developer with a background in healthcare and a passion for travelling.</h1>
         </div>
       </div>
-      <Fade top distance='%' duration={1500}>
 
-        <div className='middleSectionAboutPg'>
-          <div  className='middleSectionItem sectionGrid'>
+      <div className='middleSectionAboutPg'>
+        <Fade top distance='%' duration={1800}>
+
+          <div className='middleSectionItem sectionGrid'>
             <div>
               <h2 className='aboutSubheadings'>/STORY</h2>
               <h3 className='aboutSubheadingsH3'>A little about me.</h3>
@@ -68,34 +69,38 @@ const About = () => {
               </p>
               <p>After my bootcamp, I continued to travelled until I returned back to the UK, where I completed a 12-week internship at a healthtech company.
                 I was able to leverage my healthcare background to collaborate and develop a worldwide used contracting website that monitored the effectiveness of health technologies and services.
+                Following my internship, I was able to work as a freelance front-end developer for the same healthtech company.
               </p>
               <p>I'm truly excited to see what the future holds and eager to find my place in a collaborative team where I can continue to do what I love!</p>
 
             </div>
           </div>
-          <div className='banner'>
-            <div className='rightToLeftText'>
-              <p>FrontEnd Developer</p>
-              <p>.</p>
-              <p>User Experience</p>
-              <p>.</p>
-              <p>FrontEnd Developer</p>
-              <p>.</p>
-            </div>
-            <div className='leftToRightText '>
-              <p>Responsive Design </p>
-              <p>.</p>
-              <p>Test-Driven Development</p>
-              <p>.</p>
-              <p>User Research</p>
-              <p>.</p>
-            </div>
+        </Fade>
+        <div className='banner'>
+          <div className='rightToLeftText'>
+            <p>FrontEnd Developer</p>
+            <p>.</p>
+            <p>User Experience</p>
+            <p>.</p>
+            <p>FrontEnd Developer</p>
+            <p>.</p>
+          </div>
+          <div className='leftToRightText '>
+            <p>Responsive Design </p>
+            <p>.</p>
+            <p>Test-Driven Development</p>
+            <p>.</p>
+            <p>User Research</p>
+            <p>.</p>
           </div>
         </div>
+      </div>
 
-        <div id='waterfallImgDiv' className='middleSectionItem'>
-          <img src={Bali} alt='Waterfall' className='waterfallAbout'></img>
-        </div>
+      <div id='waterfallImgDiv' className='middleSectionItem'>
+        <img src={Bali} alt='Waterfall' className='waterfallAbout'></img>
+      </div>
+      <Fade top distance='%' duration={1800}>
+
         <div className='middleSectionItem sectionGrid'>
           <div>
             <h2 className='aboutSubheadings'>/THE PROCESS</h2>
@@ -106,7 +111,9 @@ const About = () => {
               Futhermore, I am confident in working indepednently and collaboratively, whilst being able to problem-solve through any challenges I face.</p>
           </div>
         </div>
+      </Fade>
 
+      <Fade top distance='%' duration={1800}>
 
         <div className='lg:grid grid-cols-2'>
           <div className='middleSectionItem mb-3 lg:ml-14 lg:mb-0'>
@@ -159,8 +166,10 @@ const About = () => {
             </div>
           </div>
         </div>
-
       </Fade>
+
+
+
     </motion.div>
   )
 }
