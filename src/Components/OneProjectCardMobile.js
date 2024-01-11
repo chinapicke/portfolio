@@ -7,7 +7,7 @@ function OneProjectCardMobile({ project }) {
   return (
     <div>
       <div className="cardImage" >
-        <Link to={project.deployedURL}>
+        <Link to={project.deployedURL} target="_blank">
           <img className='appImage' src={project.image} alt='App preview' />
         </Link>
       </div>
@@ -19,10 +19,7 @@ function OneProjectCardMobile({ project }) {
             className="linksGrid" >
             <div>
             <div className='flex flex-row justify-center items-center'>
-            {/* <Link to={project.deployedURL}>
-                            <button className="workLinks">view project</button>
-                        </Link>
-                        <span className='circleShadow' /> */}
+   
             {
               project.components.map((item) => {
                 return (

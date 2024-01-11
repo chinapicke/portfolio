@@ -1,17 +1,15 @@
 import '../Assets/Styles/Work.css'
 import { Link } from 'react-router-dom'
 import { FaGithub } from "react-icons/fa6";
-// import Fade from "react-awesome-reveal"
 
 
 const OneProjectCardFullScreenJS = ({ project }) => {
 
     return (
-        // <Fade top distance='20%' duration={1500}>
 
         <div className='fullScreenProjectCardJS'>
 
-            <Link to={project.deployedURL} className="projectImage">
+            <Link to={project.deployedURL} target="_blank" className="projectImage">
                 <img className='appImageFullscreen' src={project.image} alt='App preview' />
             </Link>
             <div className="projectText" id={project.projectname}>
@@ -21,10 +19,7 @@ const OneProjectCardFullScreenJS = ({ project }) => {
                 <div
                     className="linksGrid "           >
                     <div className='flex flex-row'>
-                        {/* <Link to={project.deployedURL}>
-                            <button className="workLinks">view project</button>
-                        </Link>
-                        <span className='circleShadow' /> */}
+                     
                          {
                             project.components.map((item)=>{
                                 return(
@@ -41,7 +36,6 @@ const OneProjectCardFullScreenJS = ({ project }) => {
                 </div>
             </div>
         </div>
-        // </Fade>
     )
 }
 

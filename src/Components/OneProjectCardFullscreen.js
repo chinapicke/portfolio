@@ -8,7 +8,7 @@ const OneProjectCardFullscreen = ({ project }) => {
     return (
         // <Fade top distance='20%' duration={1500}>
         <div className='fullScreenProjectCard'>
-            <Link to={project.deployedURL} className="projectImage">
+            <Link to={project.deployedURL} target="_blank" className="projectImage">
                 <img className='appImageFullscreen' src={project.image} alt='App preview' />
             </Link>
             <div className="projectText"  id={project.projectname}>
