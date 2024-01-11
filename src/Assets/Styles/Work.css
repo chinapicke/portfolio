@@ -115,10 +115,17 @@
   .workLinks{
     color: black;
     font-size: 15px;
+    transition: all .2s ease-in-out; 
+
   }
 
   svg.workLinks {
     font-size: 30px;
+}
+
+
+svg.workLinks:hover{
+  transform: scale(1.1); 
 }
   
 
